@@ -1,0 +1,718 @@
+SLURM_JOBID=3708622
+SLURM_JOB_NODELIST=k08n41s02
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/3708622
+working directory = /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4
+
+Currently Loaded Modules:
+  1) lmod/5.8   3) java/1.6.0_22   5) hbase/0.98.10.1
+  2) StdEnv     4) hadoop/2.5.1    6) myhadoop/0.30b
+
+
+
+MH_HOME=/util/academic/myhadoop/myHadoop-0.30b
+HADOOP_HOME=/util/academic/hadoop/2.5.1/hadoop-2.5.1
+Setting HADOOP to use SLURMTMPDIR on the local disk
+MH_SCRATCH_DIR=/scratch/3708622
+HBASE_HOME=/util/academic/hbase/hbase-0.98.10.1-hadoop2
+HBASE_CONF_DIR=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622
+-------Set up the configurations for myHadoop
+myHadoop: Using HADOOP_HOME=/util/academic/hadoop/2.5.1/hadoop-2.5.1
+myHadoop: Using MH_SCRATCH_DIR=/scratch/3708622
+myHadoop: Using JAVA_HOME=/util/academic/java/jdk1.6.0_22/
+myHadoop: Generating Hadoop configuration in directory in /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622...
+myHadoop: Designating k08n41s02 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+k08n41s02
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+15/04/16 06:35:08 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = k08n41s02.ccr.buffalo.edu/10.111.8.141
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 2.5.1
+STARTUP_MSG:   classpath = /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsp-api-2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/xmlenc-0.52.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsch-0.1.42.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-net-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/activation-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-json-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-collections-3.2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jets3t-0.9.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hadoop-annotations-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/paranamer-2.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hadoop-auth-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jettison-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/stax-api-1.0-2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/mockito-all-1.8.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-digester-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/httpclient-4.2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/avro-1.7.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-math3-3.1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/junit-4.11.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-configuration-1.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-httpclient-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-el-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/httpcore-4.2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hamcrest-core-1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-nfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-common-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-el-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-nfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-client-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/activation-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-json-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jettison-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/javax.inject-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/aopalliance-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guice-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jline-0.9.94.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-tests-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-client-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-api-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/hadoop-annotations-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/javax.inject-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/junit-4.11.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/guice-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/contrib/capacity-scheduler/*.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r 2e18d179e4a8065b6a9f29cf2de9451891265cce; compiled by 'jenkins' on 2014-09-05T23:11Z
+STARTUP_MSG:   java = 1.6.0_22
+************************************************************/
+15/04/16 06:35:08 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+15/04/16 06:35:08 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+15/04/16 06:35:08 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/16 06:35:08 WARN common.Util: Path /scratch/3708622/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+15/04/16 06:35:08 WARN common.Util: Path /scratch/3708622/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-05211f18-8986-496b-8bdb-16cd24ef326b
+15/04/16 06:35:08 INFO namenode.FSNamesystem: fsLock is fair:true
+15/04/16 06:35:08 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+15/04/16 06:35:08 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: The block deletion will start around 2015 Apr 16 06:35:08
+15/04/16 06:35:08 INFO util.GSet: Computing capacity for map BlocksMap
+15/04/16 06:35:08 INFO util.GSet: VM type       = 64-bit
+15/04/16 06:35:08 INFO util.GSet: 2.0% max memory 888.9 MB = 17.8 MB
+15/04/16 06:35:08 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: defaultReplication         = 3
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: maxReplication             = 512
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: minReplication             = 1
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+15/04/16 06:35:08 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+15/04/16 06:35:08 INFO namenode.FSNamesystem: fsOwner             = u2 (auth:SIMPLE)
+15/04/16 06:35:08 INFO namenode.FSNamesystem: supergroup          = supergroup
+15/04/16 06:35:08 INFO namenode.FSNamesystem: isPermissionEnabled = true
+15/04/16 06:35:08 INFO namenode.FSNamesystem: HA Enabled: false
+15/04/16 06:35:08 INFO namenode.FSNamesystem: Append Enabled: true
+15/04/16 06:35:09 INFO util.GSet: Computing capacity for map INodeMap
+15/04/16 06:35:09 INFO util.GSet: VM type       = 64-bit
+15/04/16 06:35:09 INFO util.GSet: 1.0% max memory 888.9 MB = 8.9 MB
+15/04/16 06:35:09 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+15/04/16 06:35:09 INFO namenode.NameNode: Caching file names occuring more than 10 times
+15/04/16 06:35:09 INFO util.GSet: Computing capacity for map cachedBlocks
+15/04/16 06:35:09 INFO util.GSet: VM type       = 64-bit
+15/04/16 06:35:09 INFO util.GSet: 0.25% max memory 888.9 MB = 2.2 MB
+15/04/16 06:35:09 INFO util.GSet: capacity      = 2^18 = 262144 entries
+15/04/16 06:35:09 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+15/04/16 06:35:09 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+15/04/16 06:35:09 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+15/04/16 06:35:09 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+15/04/16 06:35:09 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+15/04/16 06:35:09 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+15/04/16 06:35:09 INFO util.GSet: VM type       = 64-bit
+15/04/16 06:35:09 INFO util.GSet: 0.029999999329447746% max memory 888.9 MB = 273.1 KB
+15/04/16 06:35:09 INFO util.GSet: capacity      = 2^15 = 32768 entries
+15/04/16 06:35:09 INFO namenode.NNConf: ACLs enabled? false
+15/04/16 06:35:09 INFO namenode.NNConf: XAttrs enabled? true
+15/04/16 06:35:09 INFO namenode.NNConf: Maximum size of an xattr: 16384
+15/04/16 06:35:09 INFO namenode.FSImage: Allocated new BlockPoolId: BP-271679590-10.111.8.141-1429180509310
+15/04/16 06:35:09 INFO common.Storage: Storage directory /scratch/3708622/namenode_data has been successfully formatted.
+15/04/16 06:35:09 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+15/04/16 06:35:09 INFO util.ExitUtil: Exiting with status 0
+15/04/16 06:35:09 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at k08n41s02.ccr.buffalo.edu/10.111.8.141
+************************************************************/
+You should have at least three compute nodes for fully distributed.
+Node A is k08n41s02
+Node B is 
+Node C is 
+total 0
+-rw-r--r-- 1 u2 cse633S15     1 Apr 16 06:35 backup-masters
+-rw-r--r-- 1 u2 cse633S15  3589 Apr 16 06:35 capacity-scheduler.xml
+-rw-r--r-- 1 u2 cse633S15  1335 Apr 16 06:35 configuration.xsl
+-rw-r--r-- 1 u2 cse633S15   318 Apr 16 06:35 container-executor.cfg
+-rw-r--r-- 1 u2 cse633S15  1027 Apr 16 06:35 core-site.xml
+-rw-r--r-- 1 u2 cse633S15  3670 Apr 16 06:35 hadoop-env.cmd
+-rw-r--r-- 1 u2 cse633S15  4078 Apr 16 06:35 hadoop-env.sh
+-rw-r--r-- 1 u2 cse633S15  1774 Apr 16 06:35 hadoop-metrics2.properties
+-rw-r--r-- 1 u2 cse633S15  2490 Apr 16 06:35 hadoop-metrics.properties
+-rw-r--r-- 1 u2 cse633S15  9201 Apr 16 06:35 hadoop-policy.xml
+-rw-r--r-- 1 u2 cse633S15  7281 Apr 16 06:35 hbase-env.sh
+-rw-r--r-- 1 u2 cse633S15  1340 Apr 16 06:35 hbase-site.xml
+-rw-r--r-- 1 u2 cse633S15  1870 Apr 16 06:35 hdfs-site.xml
+-rw-r--r-- 1 u2 cse633S15  1449 Apr 16 06:35 httpfs-env.sh
+-rw-r--r-- 1 u2 cse633S15  1657 Apr 16 06:35 httpfs-log4j.properties
+-rw-r--r-- 1 u2 cse633S15    21 Apr 16 06:35 httpfs-signature.secret
+-rw-r--r-- 1 u2 cse633S15   620 Apr 16 06:35 httpfs-site.xml
+-rw-r--r-- 1 u2 cse633S15 11118 Apr 16 06:35 log4j.properties
+-rw-r--r-- 1 u2 cse633S15   938 Apr 16 06:35 mapred-env.cmd
+-rw-r--r-- 1 u2 cse633S15  1383 Apr 16 06:35 mapred-env.sh
+-rw-r--r-- 1 u2 cse633S15  4113 Apr 16 06:35 mapred-queues.xml.template
+-rw-r--r-- 1 u2 cse633S15   967 Apr 16 06:35 mapred-site.xml
+-rw-r--r-- 1 u2 cse633S15   758 Apr 16 06:35 mapred-site.xml.template
+-rw-r--r-- 1 u2 cse633S15    10 Apr 16 06:35 masters
+-rw-r--r-- 1 u2 cse633S15   642 Apr 16 06:35 myhadoop.conf
+-rw-r--r-- 1 u2 cse633S15    10 Apr 16 06:35 regionservers
+-rw-r--r-- 1 u2 cse633S15    10 Apr 16 06:35 slaves
+-rw-r--r-- 1 u2 cse633S15  2316 Apr 16 06:35 ssl-client.xml.example
+-rw-r--r-- 1 u2 cse633S15  2268 Apr 16 06:35 ssl-server.xml.example
+-rw-r--r-- 1 u2 cse633S15  2237 Apr 16 06:35 yarn-env.cmd
+-rw-r--r-- 1 u2 cse633S15  4567 Apr 16 06:35 yarn-env.sh
+-rw-r--r-- 1 u2 cse633S15  1906 Apr 16 06:35 yarn-site.xml
+-------Start hdfs and yarn ---
+This script is Deprecated. Instead use start-dfs.sh and start-yarn.sh
+15/04/16 06:35:10 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [k08n41s02]
+k08n41s02: starting namenode, logging to /scratch/3708622/logs/hadoop-u2-namenode-k08n41s02.out
+k08n41s02: starting datanode, logging to /scratch/3708622/logs/hadoop-u2-datanode-k08n41s02.out
+Starting secondary namenodes [k08n41s02]
+k08n41s02: starting secondarynamenode, logging to /scratch/3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.out
+15/04/16 06:35:26 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/3708622/logs/yarn-u2-resourcemanager-k08n41s02.out
+k08n41s02: starting nodemanager, logging to /scratch/3708622/logs/yarn-u2-nodemanager-k08n41s02.out
+-------Show Report ---
+-------start hbase--------
+k08n41s02: starting zookeeper, logging to /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-logs-3708622/hbase-u2-zookeeper-k08n41s02.out
+k08n41s02: 15/04/16 06:35:32 ERROR quorum.QuorumPeerConfig: Invalid configuration, only one server specified (ignoring)
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServerMain: Starting server
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:host.name=k08n41s02.ccr.buffalo.edu
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:java.version=1.6.0_22
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:java.vendor=Sun Microsystems Inc.
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:java.home=/gpfs/util/academic/java/jdk1.6.0_22/jre
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:java.class.path=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622:/util/academic/java/jdk1.6.0_22//lib/tools.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/..:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/activation-1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/aopalliance-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/asm-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/avro-1.7.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-beanutils-1.7.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-beanutils-core-1.8.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-cli-1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-codec-1.7.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-collections-3.2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-compress-1.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-configuration-1.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-daemon-1.0.13.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-digester-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-el-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-httpclient-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-io-2.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-lang-2.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-logging-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-math-2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-net-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/findbugs-annotations-1.3.9-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/gmbal-api-only-3.0.0-b023.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-framework-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-server-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-servlet-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-rcm-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guava-12.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guice-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guice-servlet-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-annotations-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-auth-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-hdfs-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-app-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-api-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-server-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hamcrest-core-1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-annotations-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-checkstyle-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-client-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-common-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-common-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-examples-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-hadoop2-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-hadoop-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-it-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-it-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-prefix-tree-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-protocol-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-rest-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-server-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-server-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-shell-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-testing-util-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-thrift-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/high-scale-lib-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/htrace-core-2.04.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/httpclient-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/httpcore-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-core-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-jaxrs-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-mapper-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-xc-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jamon-runtime-2.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jasper-compiler-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jasper-runtime-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.inject-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.servlet-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.servlet-api-3.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jaxb-api-2.2.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jaxb-impl-2.2.3-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jcodings-1.0.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-client-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-core-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-guice-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-json-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-server-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-test-framework-core-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-test-framework-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jets3t-0.6.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jettison-1.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-sslengine-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-util-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/joni-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jruby-complete-1.6.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsch-0.1.42.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsp-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsp-api-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsr305-1.3.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/junit-4.11.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/libthrift-0.9.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/log4j-1.2.17.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/management-api-3.0.0-b012.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/metrics-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/netty-3.6.6.Final.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/paranamer-2.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/protobuf-java-2.5.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/servlet-api-2.5-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/slf4j-api-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/slf4j-log4j12-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/snappy-java-1.0.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/xmlenc-0.52.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/xz-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/zookeeper-3.4.6.jar:
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:java.library.path=/gpfs/util/academic/java/jdk1.6.0_22/jre/lib/amd64/server:/gpfs/util/academic/java/jdk1.6.0_22/jre/lib/amd64:/gpfs/util/academic/java/jdk1.6.0_22/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+k08n41s02: 15/04/16 06:35:32 INFO server.ZooKeeperServer: Server environment:java.io.tmpdir=/tmp
+starting master, logging to /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-logs-3708622/hbase-u2-master-k08n41s02.out
+15/04/16 06:35:33 INFO util.VersionInfo: HBase 0.98.10.1-hadoop2
+15/04/16 06:35:33 INFO util.VersionInfo: Subversion git://aspire/home/apurtell/src/hbase -r d5014b47660a58485a6bdd0776dea52114c7041e
+15/04/16 06:35:33 INFO util.VersionInfo: Compiled by apurtell on Tue Feb 10 11:34:09 PST 2015
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:HADOOP_PREFIX=/util/academic/hadoop/2.5.1/hadoop-2.5.1
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:JAVA_HOME=/util/academic/java/jdk1.6.0_22/
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:SLURM_JOB_CPUS_PER_NODE=12
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:SLURM_CPUS_ON_NODE=12
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:HBASE_HOME=/util/academic/hbase/hbase-0.98.10.1-hadoop2
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:HBASE_ENV_INIT=true
+15/04/16 06:35:33 INFO util.ServerCommandLine: env:_ModuleTable002_=Ii91dGlsL0xtb2QvbW9kdWxlZmlsZXMvQ29yZS9oYWRvb3AvMi41LjEubHVhIixbImRlZmF1bHQiXT0wLFsiZnVsbE5hbWUiXT0iaGFkb29wLzIuNS4xIixbImxvYWRPcmRlciJdPTQscHJvcFQ9e30sWyJzaG9ydCJdPSJoYWRvb3AiLFsic3RhdHVzIl09ImFjdGl2ZSIsfSxoYmFzZT17WyJGTiJdPSIvdXRpbC9MbW9kL21vZHVsZWZpbGVzL0NvcmUvaGJhc2UvMC45OC4xMC4xLmx1YSIsWyJkZWZhdWx0Il09MCxbImZ1bGxOYW1lIl09ImhiYXNlLzAuOTguMTAuMSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic2hvcnQiXT0iaGJhc2UiLFsic3RhdHVzIl09ImFjdGl2ZSIsfSxqYXZhPXtbIkZOIl09Ii91dGlsL0xtb2QvbW9kdWxlZmlsZXMvQ29yZS9qYXZhLzEuNi4wXzIy
+k08n41s02: starting regionserver, logging to /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-logs-3708622/hbase-u2-regionserver-k08n41s02.out
+k08n41s02: 15/04/16 06:35:34 INFO util.VersionInfo: HBase 0.98.10.1-hadoop2
+k08n41s02: 15/04/16 06:35:34 INFO util.VersionInfo: Subversion git://aspire/home/apurtell/src/hbase -r d5014b47660a58485a6bdd0776dea52114c7041e
+k08n41s02: 15/04/16 06:35:34 INFO util.VersionInfo: Compiled by apurtell on Tue Feb 10 11:34:09 PST 2015
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:JAVA_HOME=/util/academic/java/jdk1.6.0_22/
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:LMOD_sys=Linux
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:HBASE_HOME=/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/..
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:HBASE_ENV_INIT=true
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:LMOD_DEFAULT_MODULEPATH=/util/Lmod/modulefiles/Core:/util/Lmod/modulefiles/Compiler:/util/Lmod/modulefiles/MPI
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:_ModuleTable002_=dXRpbC9MbW9kL21vZHVsZWZpbGVzL0NvcmUvbG1vZC81LjgubHVhIixbImRlZmF1bHQiXT0xLFsiZnVsbE5hbWUiXT0ibG1vZC81LjgiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInNob3J0Il09Imxtb2QiLFsic3RhdHVzIl09ImFjdGl2ZSIsfSx9LG1wYXRoQT17Ii91dGlsL0xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsIi91dGlsL0xtb2QvbW9kdWxlZmlsZXMvQ29tcGlsZXIiLCIvdXRpbC9MbW9kL21vZHVsZWZpbGVzL01QSSIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXRpbC9MbW9kL21vZHVsZWZpbGVzL0NvcmU6L3V0aWwvTG1vZC9tb2R1bGVmaWxlcy9Db21waWxlcjovdXRpbC9MbW9kL21vZHVsZWZpbGVzL01QSSIsWyJ2ZXJzaW9uIl09Mix9
+k08n41s02: 15/04/16 06:35:34 INFO util.ServerCommandLine: env:MODULEPATH=/util/Lmod/modulefiles/Core:/util/Lmod/modulefiles/Compiler:/util/Lmod/modulefiles/MPI
+-------list directory ---
+-------make directory-----
+15/04/16 06:35:36 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-------copy files to hdfs-------
+15/04/16 06:35:37 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+------- configure classpath for mapreduce job------
+------- run job -----------
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/slf4j-log4j12-1.6.4.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+15/04/16 06:35:39 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/16 06:35:39 INFO zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x6825c828 connecting to ZooKeeper ensemble=k08n41s02:2181
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:host.name=k08n41s02.ccr.buffalo.edu
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.version=1.6.0_22
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.home=/gpfs/util/academic/java/jdk1.6.0_22/jre
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.class.path=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsp-api-2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/xmlenc-0.52.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsch-0.1.42.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-net-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/activation-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-json-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-collections-3.2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jets3t-0.9.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hadoop-annotations-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/paranamer-2.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hadoop-auth-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jettison-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/stax-api-1.0-2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/mockito-all-1.8.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-digester-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/httpclient-4.2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/avro-1.7.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-math3-3.1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/junit-4.11.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-configuration-1.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-httpclient-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-el-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/httpcore-4.2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hamcrest-core-1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-nfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-common-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-el-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-nfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-client-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/activation-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-json-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jettison-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/javax.inject-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/aopalliance-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guice-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jline-0.9.94.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-tests-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-client-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-api-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/hadoop-annotations-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/javax.inject-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/junit-4.11.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/guice-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.5.1.jar::/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/activation-1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/aopalliance-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/asm-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/avro-1.7.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-beanutils-1.7.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-beanutils-core-1.8.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-cli-1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-codec-1.7.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-collections-3.2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-compress-1.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-configuration-1.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-daemon-1.0.13.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-digester-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-el-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-httpclient-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-io-2.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-lang-2.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-logging-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-math-2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/commons-net-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/findbugs-annotations-1.3.9-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/gmbal-api-only-3.0.0-b023.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/grizzly-framework-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/grizzly-http-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/grizzly-http-server-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/grizzly-http-servlet-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/grizzly-rcm-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/guava-12.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/guice-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/guice-servlet-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-annotations-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-auth-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-hdfs-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-mapreduce-client-app-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-mapreduce-client-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-mapreduce-client-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-yarn-api-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-yarn-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-yarn-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-yarn-server-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hamcrest-core-1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-annotations-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-checkstyle-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-client-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-common-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-common-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-examples-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-hadoop2-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-hadoop-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-it-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-it-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-prefix-tree-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-protocol-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-rest-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-server-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-server-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-shell-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-testing-util-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/hbase-thrift-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/high-scale-lib-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/htrace-core-2.04.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/httpclient-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/httpcore-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jackson-core-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jackson-jaxrs-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jackson-mapper-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jackson-xc-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jamon-runtime-2.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jasper-compiler-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jasper-runtime-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/javax.inject-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/javax.servlet-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/javax.servlet-api-3.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jaxb-api-2.2.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jcodings-1.0.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-client-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-core-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-guice-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-json-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-server-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-test-framework-core-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jersey-test-framework-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jets3t-0.6.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jettison-1.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jetty-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jetty-sslengine-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jetty-util-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/joni-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jruby-complete-1.6.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jsch-0.1.42.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jsp-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jsp-api-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/jsr305-1.3.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/junit-4.11.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/libthrift-0.9.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/log4j-1.2.17.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/management-api-3.0.0-b012.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/metrics-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/netty-3.6.6.Final.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/paranamer-2.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/protobuf-java-2.5.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/ruby:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/servlet-api-2.5-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/slf4j-api-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/slf4j-log4j12-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/snappy-java-1.0.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/xmlenc-0.52.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/xz-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/contrib/capacity-scheduler/*.jar
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/util/academic/hadoop/2.5.1/hadoop-2.5.1/lib/native
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:os.version=2.6.32-431.17.1.el6.x86_64
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:user.name=u2
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:user.home=/user/u2
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Client environment:user.dir=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4
+15/04/16 06:35:39 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k08n41s02:2181 sessionTimeout=90000 watcher=hconnection-0x6825c8280x0, quorum=k08n41s02:2181, baseZNode=/hbase
+15/04/16 06:35:40 INFO zookeeper.ClientCnxn: Opening socket connection to server k08n41s02.ccr.buffalo.edu/10.111.8.141:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/16 06:35:40 INFO zookeeper.ClientCnxn: Socket connection established to k08n41s02.ccr.buffalo.edu/10.111.8.141:2181, initiating session
+15/04/16 06:35:40 INFO zookeeper.ClientCnxn: Session establishment complete on server k08n41s02.ccr.buffalo.edu/10.111.8.141:2181, sessionid = 0x14cc1cc47290007, negotiated timeout = 90000
+15/04/16 06:35:40 INFO Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+15/04/16 06:35:44 INFO zookeeper.RecoverableZooKeeper: Process identifier=catalogtracker-on-hconnection-0x6825c828 connecting to ZooKeeper ensemble=k08n41s02:2181
+15/04/16 06:35:44 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k08n41s02:2181 sessionTimeout=90000 watcher=catalogtracker-on-hconnection-0x6825c8280x0, quorum=k08n41s02:2181, baseZNode=/hbase
+15/04/16 06:35:44 INFO zookeeper.ClientCnxn: Opening socket connection to server k08n41s02.ccr.buffalo.edu/10.111.8.141:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/16 06:35:44 INFO zookeeper.ClientCnxn: Socket connection established to k08n41s02.ccr.buffalo.edu/10.111.8.141:2181, initiating session
+15/04/16 06:35:44 INFO zookeeper.ClientCnxn: Session establishment complete on server k08n41s02.ccr.buffalo.edu/10.111.8.141:2181, sessionid = 0x14cc1cc47290008, negotiated timeout = 90000
+15/04/16 06:35:44 INFO zookeeper.ZooKeeper: Session: 0x14cc1cc47290008 closed
+15/04/16 06:35:44 INFO zookeeper.ClientCnxn: EventThread shut down
+15/04/16 06:35:45 INFO client.RMProxy: Connecting to ResourceManager at k08n41s02/10.111.8.141:8032
+15/04/16 06:35:45 INFO mapreduce.TableOutputFormat: Created table instance for raw
+15/04/16 06:35:45 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+15/04/16 06:35:46 INFO input.FileInputFormat: Total input paths to process : 2
+15/04/16 06:35:46 INFO mapreduce.JobSubmitter: number of splits:2
+15/04/16 06:35:46 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1429180528590_0001
+15/04/16 06:35:47 INFO impl.YarnClientImpl: Submitted application application_1429180528590_0001
+15/04/16 06:35:47 INFO mapreduce.Job: The url to track the job: http://k08n41s02:8088/proxy/application_1429180528590_0001/
+15/04/16 06:35:47 INFO mapreduce.Job: Running job: job_1429180528590_0001
+15/04/16 06:35:55 INFO mapreduce.Job: Job job_1429180528590_0001 running in uber mode : false
+15/04/16 06:35:55 INFO mapreduce.Job:  map 0% reduce 0%
+15/04/16 06:36:01 INFO mapreduce.Job:  map 100% reduce 0%
+15/04/16 06:36:02 INFO mapreduce.Job: Job job_1429180528590_0001 completed successfully
+15/04/16 06:36:02 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=247986
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=71562
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=4
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Launched map tasks=2
+		Data-local map tasks=2
+		Total time spent by all maps in occupied slots (ms)=8196
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=8196
+		Total vcore-seconds taken by all map tasks=8196
+		Total megabyte-seconds taken by all map tasks=8392704
+	Map-Reduce Framework
+		Map input records=1483
+		Map output records=1481
+		Input split bytes=201
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=51
+		CPU time spent (ms)=2630
+		Physical memory (bytes) snapshot=329105408
+		Virtual memory (bytes) snapshot=1752489984
+		Total committed heap usage (bytes)=401997824
+	File Input Format Counters 
+		Bytes Read=71361
+	File Output Format Counters 
+		Bytes Written=0
+15/04/16 06:36:03 INFO zookeeper.RecoverableZooKeeper: Process identifier=catalogtracker-on-hconnection-0x6825c828 connecting to ZooKeeper ensemble=k08n41s02:2181
+15/04/16 06:36:03 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k08n41s02:2181 sessionTimeout=90000 watcher=catalogtracker-on-hconnection-0x6825c8280x0, quorum=k08n41s02:2181, baseZNode=/hbase
+15/04/16 06:36:03 INFO zookeeper.ClientCnxn: Opening socket connection to server k08n41s02.ccr.buffalo.edu/10.111.8.141:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/16 06:36:03 INFO zookeeper.ClientCnxn: Socket connection established to k08n41s02.ccr.buffalo.edu/10.111.8.141:2181, initiating session
+15/04/16 06:36:03 INFO zookeeper.ClientCnxn: Session establishment complete on server k08n41s02.ccr.buffalo.edu/10.111.8.141:2181, sessionid = 0x14cc1cc4729000c, negotiated timeout = 90000
+15/04/16 06:36:03 INFO zookeeper.ZooKeeper: Session: 0x14cc1cc4729000c closed
+15/04/16 06:36:03 INFO zookeeper.ClientCnxn: EventThread shut down
+15/04/16 06:36:03 INFO client.RMProxy: Connecting to ResourceManager at k08n41s02/10.111.8.141:8032
+15/04/16 06:36:03 INFO mapreduce.TableOutputFormat: Created table instance for Xi
+15/04/16 06:36:03 WARN mapreduce.JobSubmitter: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+15/04/16 06:36:03 INFO util.RegionSizeCalculator: Calculating region sizes for table "raw".
+15/04/16 06:36:04 INFO mapreduce.JobSubmitter: number of splits:1
+15/04/16 06:36:04 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1429180528590_0002
+15/04/16 06:36:04 INFO impl.YarnClientImpl: Submitted application application_1429180528590_0002
+15/04/16 06:36:04 INFO mapreduce.Job: The url to track the job: http://k08n41s02:8088/proxy/application_1429180528590_0002/
+15/04/16 06:36:04 INFO mapreduce.Job: Running job: job_1429180528590_0002
+15/04/16 06:36:15 INFO mapreduce.Job: Job job_1429180528590_0002 running in uber mode : false
+15/04/16 06:36:15 INFO mapreduce.Job:  map 0% reduce 0%
+15/04/16 06:36:21 INFO mapreduce.Job:  map 100% reduce 0%
+15/04/16 06:36:27 INFO mapreduce.Job:  map 100% reduce 100%
+15/04/16 06:36:27 INFO mapreduce.Job: Job job_1429180528590_0002 completed successfully
+15/04/16 06:36:27 INFO mapreduce.Job: Counters: 59
+	File System Counters
+		FILE: Number of bytes read=34712
+		FILE: Number of bytes written=318903
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=80
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=1
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+	Job Counters 
+		Launched map tasks=1
+		Launched reduce tasks=1
+		Data-local map tasks=1
+		Total time spent by all maps in occupied slots (ms)=3570
+		Total time spent by all reduces in occupied slots (ms)=3638
+		Total time spent by all map tasks (ms)=3570
+		Total time spent by all reduce tasks (ms)=3638
+		Total vcore-seconds taken by all map tasks=3570
+		Total vcore-seconds taken by all reduce tasks=3638
+		Total megabyte-seconds taken by all map tasks=3655680
+		Total megabyte-seconds taken by all reduce tasks=3725312
+	Map-Reduce Framework
+		Map input records=1481
+		Map output records=1481
+		Map output bytes=31744
+		Map output materialized bytes=34712
+		Input split bytes=80
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=71
+		Reduce shuffle bytes=34712
+		Reduce input records=1481
+		Reduce output records=71
+		Spilled Records=2962
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=47
+		CPU time spent (ms)=2910
+		Physical memory (bytes) snapshot=439242752
+		Virtual memory (bytes) snapshot=1764532224
+		Total committed heap usage (bytes)=401997824
+	HBase Counters
+		BYTES_IN_REMOTE_RESULTS=0
+		BYTES_IN_RESULTS=287831
+		MILLIS_BETWEEN_NEXTS=586
+		NOT_SERVING_REGION_EXCEPTION=0
+		NUM_SCANNER_RESTARTS=0
+		REGIONS_SCANNED=1
+		REMOTE_RPC_CALLS=0
+		REMOTE_RPC_RETRIES=0
+		RPC_CALLS=5
+		RPC_RETRIES=0
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=0
+------- check hbase table --------
+15/04/16 06:36:31 INFO Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+LoadError: No such file to load -- /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-script
+    load at org/jruby/RubyKernel.java:1087
+  (root) at /util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/hirb.rb:163
+-------list directory ---
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/slf4j-log4j12-1.6.4.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+15/04/16 06:36:34 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Found 6 items
+drwxr-xr-x   - u2 supergroup          0 2015-04-16 06:35 /hbase/.tmp
+drwxr-xr-x   - u2 supergroup          0 2015-04-16 06:35 /hbase/WALs
+drwxr-xr-x   - u2 supergroup          0 2015-04-16 06:35 /hbase/data
+-rw-r--r--   3 u2 supergroup         42 2015-04-16 06:35 /hbase/hbase.id
+-rw-r--r--   3 u2 supergroup          7 2015-04-16 06:35 /hbase/hbase.version
+drwxr-xr-x   - u2 supergroup          0 2015-04-16 06:35 /hbase/oldWALs
+--------stop hbase-------
+stopping hbase...............
+k08n41s02: stopping zookeeper.
+-------Stop hdfs and yarn ---
+This script is Deprecated. Instead use stop-dfs.sh and stop-yarn.sh
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/slf4j-log4j12-1.6.4.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+15/04/16 06:36:56 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Stopping namenodes on [k08n41s02]
+k08n41s02: stopping namenode
+k08n41s02: stopping datanode
+Stopping secondary namenodes [k08n41s02]
+k08n41s02: stopping secondarynamenode
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hbase/hbase-0.98.10.1-hadoop2/lib/slf4j-log4j12-1.6.4.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+15/04/16 06:37:17 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+stopping yarn daemons
+stopping resourcemanager
+k08n41s02: stopping nodemanager
+k08n41s02: nodemanager did not stop gracefully after 5 seconds: killing with kill -9
+no proxyserver to stop
+Copying Hadoop logs back to /gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs...
+`/scratch/3708622/logs' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs'
+`/scratch/3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.out' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.out'
+`/scratch/3708622/logs/yarn-u2-resourcemanager-k08n41s02.log' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/yarn-u2-resourcemanager-k08n41s02.log'
+`/scratch/3708622/logs/yarn-u2-resourcemanager-k08n41s02.out' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/yarn-u2-resourcemanager-k08n41s02.out'
+`/scratch/3708622/logs/hadoop-u2-datanode-k08n41s02.out' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/hadoop-u2-datanode-k08n41s02.out'
+`/scratch/3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.log' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.log'
+`/scratch/3708622/logs/hadoop-u2-datanode-k08n41s02.log' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/hadoop-u2-datanode-k08n41s02.log'
+`/scratch/3708622/logs/SecurityAuth-u2.audit' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/SecurityAuth-u2.audit'
+`/scratch/3708622/logs/yarn-u2-nodemanager-k08n41s02.log' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/yarn-u2-nodemanager-k08n41s02.log'
+`/scratch/3708622/logs/userlogs' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/stdout' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/stdout'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/syslog' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/syslog'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/stderr' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/stderr'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/stdout' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/stdout'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/syslog' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/syslog'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/stderr' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/stderr'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/stdout' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/stdout'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/syslog' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/syslog'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/stderr' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/stderr'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/stdout' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/stdout'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/syslog' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/syslog'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/stderr' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/stderr'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/stdout' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/stdout'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/syslog' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/syslog'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/stderr' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/stderr'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/stdout' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/stdout'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/syslog' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/syslog'
+`/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/stderr' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/stderr'
+`/scratch/3708622/logs/hadoop-u2-namenode-k08n41s02.log' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/hadoop-u2-namenode-k08n41s02.log'
+`/scratch/3708622/logs/yarn-u2-nodemanager-k08n41s02.out' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/yarn-u2-nodemanager-k08n41s02.out'
+`/scratch/3708622/logs/hadoop-u2-namenode-k08n41s02.out' -> `/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3708622/logs/hadoop-u2-namenode-k08n41s02.out'
+removed directory: `/scratch/3708622/mapred_scratch/filecache'
+removed directory: `/scratch/3708622/mapred_scratch/nmPrivate'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/12/hbase-client-0.98.10.1-hadoop2.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/12/.tmp_hbase-client-0.98.10.1-hadoop2.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/12'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/19/hadoop-mapreduce-client-core-2.5.1.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/19/.tmp_hadoop-mapreduce-client-core-2.5.1.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/19'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/18/.tmp_hbase-hadoop-compat-0.98.10.1-hadoop2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/18/hbase-hadoop-compat-0.98.10.1-hadoop2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/18'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/28/hbase-protocol-0.98.10.1-hadoop2.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/28/.tmp_hbase-protocol-0.98.10.1-hadoop2.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/28'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/14/netty-3.6.2.Final.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/14/.tmp_netty-3.6.2.Final.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/14'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/35/hadoop-common-2.5.1.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/35/.tmp_hadoop-common-2.5.1.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/35'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/15/hbase-protocol-0.98.10.1-hadoop2.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/15/.tmp_hbase-protocol-0.98.10.1-hadoop2.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/15'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/24/.tmp_hbase-server-0.98.10.1-hadoop2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/24/hbase-server-0.98.10.1-hadoop2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/24'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/20/.tmp_hbase-common-0.98.10.1-hadoop2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/20/hbase-common-0.98.10.1-hadoop2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/20'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/29/.tmp_high-scale-lib-1.1.1.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/29/high-scale-lib-1.1.1.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/29'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/34/.tmp_zookeeper-3.4.6.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/34/zookeeper-3.4.6.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/34'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/31/.tmp_hbase-hadoop-compat-0.98.10.1-hadoop2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/31/hbase-hadoop-compat-0.98.10.1-hadoop2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/31'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/21/.tmp_zookeeper-3.4.6.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/21/zookeeper-3.4.6.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/21'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/26/.tmp_htrace-core-2.04.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/26/htrace-core-2.04.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/26'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/25/hbase-client-0.98.10.1-hadoop2.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/25/.tmp_hbase-client-0.98.10.1-hadoop2.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/25'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/10/.tmp_protobuf-java-2.5.0.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/10/protobuf-java-2.5.0.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/10'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/11/.tmp_hbase-server-0.98.10.1-hadoop2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/11/hbase-server-0.98.10.1-hadoop2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/11'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/27/netty-3.6.2.Final.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/27/.tmp_netty-3.6.2.Final.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/27'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/13/.tmp_htrace-core-2.04.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/13/htrace-core-2.04.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/13'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/23/.tmp_protobuf-java-2.5.0.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/23/protobuf-java-2.5.0.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/23'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/17/.tmp_guava-11.0.2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/17/guava-11.0.2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/17'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/16/.tmp_high-scale-lib-1.1.1.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/16/high-scale-lib-1.1.1.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/16'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/32/hadoop-mapreduce-client-core-2.5.1.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/32/.tmp_hadoop-mapreduce-client-core-2.5.1.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/32'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/33/.tmp_hbase-common-0.98.10.1-hadoop2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/33/hbase-common-0.98.10.1-hadoop2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/33'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/30/.tmp_guava-11.0.2.jar.crc'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/30/guava-11.0.2.jar'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/30'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/22/hadoop-common-2.5.1.jar'
+removed `/scratch/3708622/mapred_scratch/usercache/u2/filecache/22/.tmp_hadoop-common-2.5.1.jar.crc'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache/22'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/filecache'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2/appcache'
+removed directory: `/scratch/3708622/mapred_scratch/usercache/u2'
+removed directory: `/scratch/3708622/mapred_scratch/usercache'
+removed directory: `/scratch/3708622/mapred_scratch'
+removed `/scratch/3708622/tmp/dfs/namesecondary/current/fsimage_0000000000000000000.md5'
+removed `/scratch/3708622/tmp/dfs/namesecondary/current/fsimage_0000000000000000000'
+removed `/scratch/3708622/tmp/dfs/namesecondary/current/edits_0000000000000000001-0000000000000000447'
+removed `/scratch/3708622/tmp/dfs/namesecondary/current/fsimage_0000000000000000447.md5'
+removed `/scratch/3708622/tmp/dfs/namesecondary/current/VERSION'
+removed `/scratch/3708622/tmp/dfs/namesecondary/current/fsimage_0000000000000000447'
+removed directory: `/scratch/3708622/tmp/dfs/namesecondary/current'
+removed directory: `/scratch/3708622/tmp/dfs/namesecondary'
+removed directory: `/scratch/3708622/tmp/dfs'
+removed directory: `/scratch/3708622/tmp'
+removed `/scratch/3708622/namenode_data/current/fsimage_0000000000000000000.md5'
+removed `/scratch/3708622/namenode_data/current/fsimage_0000000000000000000'
+removed `/scratch/3708622/namenode_data/current/edits_0000000000000000001-0000000000000000447'
+removed `/scratch/3708622/namenode_data/current/fsimage_0000000000000000447.md5'
+removed `/scratch/3708622/namenode_data/current/VERSION'
+removed `/scratch/3708622/namenode_data/current/edits_inprogress_0000000000000000448'
+removed `/scratch/3708622/namenode_data/current/seen_txid'
+removed `/scratch/3708622/namenode_data/current/fsimage_0000000000000000447'
+removed directory: `/scratch/3708622/namenode_data/current'
+removed directory: `/scratch/3708622/namenode_data'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/VERSION'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741867'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741836_1012.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741897_1073.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741839_1015.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741834_1010.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741838_1014.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741827'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741863_1039.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741892_1068.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741832_1008.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741888_1064.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741837_1013.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741829_1005.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741888'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741828_1004.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741898'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741826_1002.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741830_1006.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741895_1071.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741866_1042.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741835'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741868'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741890'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741840'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741831'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741836'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741896'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741827_1003.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741861_1037.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741831_1007.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741894'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741835_1011.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741861'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741865'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741830'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741865_1041.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741864_1040.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741889'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741893'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741841'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741826'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741841_1017.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741840_1016.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741838'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741894_1070.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741889_1065.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741833_1009.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741893_1069.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741868_1044.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741863'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741866'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741834'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741890_1066.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741829'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741825_1001.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741898_1074.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741825'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741842_1018.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741832'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741895'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741833'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741896_1072.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741867_1043.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741892'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741891'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741828'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741837'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741864'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741839'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741891_1067.meta'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741897'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized/blk_1073741842'
+removed directory: `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/finalized'
+removed directory: `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/rbw'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current/dfsUsed'
+removed directory: `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/current'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/dncp_block_verification.log.prev'
+removed `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/dncp_block_verification.log.curr'
+removed directory: `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310/tmp'
+removed directory: `/scratch/3708622/hdfs_data/current/BP-271679590-10.111.8.141-1429180509310'
+removed `/scratch/3708622/hdfs_data/current/VERSION'
+removed directory: `/scratch/3708622/hdfs_data/current'
+removed directory: `/scratch/3708622/hdfs_data'
+removed `/scratch/3708622/pids/hadoop-u2-datanode.pid'
+removed `/scratch/3708622/pids/yarn-u2-nodemanager.pid'
+removed `/scratch/3708622/pids/hadoop-u2-namenode.pid'
+removed `/scratch/3708622/pids/hadoop-u2-secondarynamenode.pid'
+removed `/scratch/3708622/pids/yarn-u2-resourcemanager.pid'
+removed directory: `/scratch/3708622/pids'
+removed `/scratch/3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.out'
+removed `/scratch/3708622/logs/yarn-u2-resourcemanager-k08n41s02.log'
+removed `/scratch/3708622/logs/yarn-u2-resourcemanager-k08n41s02.out'
+removed `/scratch/3708622/logs/hadoop-u2-datanode-k08n41s02.out'
+removed `/scratch/3708622/logs/hadoop-u2-secondarynamenode-k08n41s02.log'
+removed `/scratch/3708622/logs/hadoop-u2-datanode-k08n41s02.log'
+removed `/scratch/3708622/logs/SecurityAuth-u2.audit'
+removed `/scratch/3708622/logs/yarn-u2-nodemanager-k08n41s02.log'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/stdout'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/syslog'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002/stderr'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000002'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/stdout'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/syslog'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003/stderr'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000003'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/stdout'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/syslog'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001/stderr'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0002/container_1429180528590_0002_01_000001'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0002'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/stdout'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/syslog'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003/stderr'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000003'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/stdout'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/syslog'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002/stderr'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000002'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/stdout'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/syslog'
+removed `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001/stderr'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0001/container_1429180528590_0001_01_000001'
+removed directory: `/scratch/3708622/logs/userlogs/application_1429180528590_0001'
+removed directory: `/scratch/3708622/logs/userlogs'
+removed `/scratch/3708622/logs/hadoop-u2-namenode-k08n41s02.log'
+removed `/scratch/3708622/logs/yarn-u2-nodemanager-k08n41s02.out'
+removed `/scratch/3708622/logs/hadoop-u2-namenode-k08n41s02.out'
+removed directory: `/scratch/3708622/logs'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6025515377032434374/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6025515377032434374/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6025515377032434374'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_62122062961751717/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_62122062961751717/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50070_hdfs____w2cu08_62122062961751717'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4766047246652574897/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4766047246652574897/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4766047246652574897'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2643884521332970742/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2643884521332970742/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_2643884521332970742'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_9140692177115557926/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_9140692177115557926/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_9140692177115557926'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6683628982724477240/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6683628982724477240/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6683628982724477240'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4097896170396622580/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4097896170396622580/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4097896170396622580'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_493512125521645799/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_493512125521645799/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_493512125521645799'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4378622191903749342/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4378622191903749342/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_4378622191903749342'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6515127925570683671/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6515127925570683671/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_6515127925570683671'
+removed directory: `/tmp/Jetty_k08n41s02_50090_secondary____t975wh_4228220325399107919/jsp'
+removed directory: `/tmp/Jetty_k08n41s02_50090_secondary____t975wh_4228220325399107919/.active'
+removed directory: `/tmp/Jetty_k08n41s02_50090_secondary____t975wh_4228220325399107919'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_810451333570410253/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_810451333570410253/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_810451333570410253'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_1366296071105383947/jsp'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_1366296071105383947/.active'
+removed directory: `/tmp/Jetty_0_0_0_0_50075_datanode____hwtdwq_1366296071105383947'

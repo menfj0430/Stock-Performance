@@ -1,0 +1,276 @@
+15/04/17 23:18:32 INFO util.VersionInfo: HBase 0.98.10.1-hadoop2
+15/04/17 23:18:32 INFO util.VersionInfo: Subversion git://aspire/home/apurtell/src/hbase -r d5014b47660a58485a6bdd0776dea52114c7041e
+15/04/17 23:18:32 INFO util.VersionInfo: Compiled by apurtell on Tue Feb 10 11:34:09 PST 2015
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:JAVA_HOME=/util/academic/java/jdk1.6.0_22/
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_HOME=/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/..
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_sys=Linux
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_ENV_INIT=true
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_DEFAULT_MODULEPATH=/util/Lmod/modulefiles/Core:/util/Lmod/modulefiles/Compiler:/util/Lmod/modulefiles/MPI
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:_ModuleTable002_=dXRpbC9MbW9kL21vZHVsZWZpbGVzL0NvcmUvbG1vZC81LjgubHVhIixbImRlZmF1bHQiXT0xLFsiZnVsbE5hbWUiXT0ibG1vZC81LjgiLFsibG9hZE9yZGVyIl09MSxwcm9wVD17fSxbInNob3J0Il09Imxtb2QiLFsic3RhdHVzIl09ImFjdGl2ZSIsfSx9LG1wYXRoQT17Ii91dGlsL0xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsIi91dGlsL0xtb2QvbW9kdWxlZmlsZXMvQ29tcGlsZXIiLCIvdXRpbC9MbW9kL21vZHVsZWZpbGVzL01QSSIsfSxbInN5c3RlbUJhc2VNUEFUSCJdPSIvdXRpbC9MbW9kL21vZHVsZWZpbGVzL0NvcmU6L3V0aWwvTG1vZC9tb2R1bGVmaWxlcy9Db21waWxlcjovdXRpbC9MbW9kL21vZHVsZWZpbGVzL01QSSIsWyJ2ZXJzaW9uIl09Mix9
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:MODULEPATH=/util/Lmod/modulefiles/Core:/util/Lmod/modulefiles/Compiler:/util/Lmod/modulefiles/MPI
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:SSH_CLIENT=10.111.5.26 48453 22
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:CCR_CLUSTERNAME=ccr
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:MAIL=/var/mail/u2
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:PWD=/util/academic/hbase/hbase-0.98.10.1-hadoop2
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_ZNODE_FILE=/tmp/hbase-u2-regionserver.znode
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:CVS_RSH=ssh
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:G_BROKEN_FILENAMES=1
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_NICENESS=0
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_REST_OPTS=
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_PKG=/util/Lmod/lmod/5.8
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_PREPEND_BLOCK=normal
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:PATH=/util/Lmod/lmod/lmod/libexec:/usr/lib64/qt-3.3/bin:/util/cuda/4.0.17/cuda/bin:/usr/local/bin:/bin:/usr/bin:/usr/lpp/mmfs/bin:/usr/kerberos/bin:/opt/dell/srvadmin/bin
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_arch=x86_64
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_FULL_SETTARG_SUPPORT=no
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:QTLIB=/usr/lib64/qt-3.3/lib
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_SETTARG_CMD=:
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_SECURITY_LOGGER=INFO,RFAS
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_START_FILE=/tmp/hbase-u2-regionserver.autorestart
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:_LMFILES_=/util/Lmod/modulefiles/Core/lmod/5.8.lua:/util/Lmod/modulefiles/Core/StdEnv.lua
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_LOGFILE=hbase-u2-regionserver-k05n26.log
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:MODULESHOME=/util/Lmod/lmod/5.8
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:SHLVL=3
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_LOG_DIR=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-logs-3719019
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:__Init_Default_Modules=1
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_OPTS=-XX:+UseConcMarkSweepGC   -Dhbase.log.dir=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-logs-3719019 -Dhbase.log.file=hbase-u2-regionserver-k05n26.log -Dhbase.home.dir=/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/.. -Dhbase.id.str=u2 -Dhbase.root.logger=INFO,RFA -Dhbase.security.logger=INFO,RFAS
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:MANPATH=/util/Lmod/lmod/5.8/share/man::
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:_ModuleTable_Sz_=2
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:BASH_FUNC_module()=() {  eval $($LMOD_CMD /bin/bash "$@");
+ [ $? = 0 ] && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LOGNAME=u2
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_CMD=/util/Lmod/lmod/5.8/libexec/lmod
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:QTDIR=/usr/lib64/qt-3.3
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:MODULEPATH_ROOT=/util/Lmod/modulefiles
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LD_LIBRARY_PATH=/gpfs/util/academic/java/jdk1.6.0_22/jre/lib/amd64/server:/gpfs/util/academic/java/jdk1.6.0_22/jre/lib/amd64:/gpfs/util/academic/java/jdk1.6.0_22/jre/../lib/amd64:/util/cuda/4.0.17/cuda/lib64:/util/cuda/4.0.17/cuda/lib:
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:SSH_CONNECTION=10.111.5.26 48453 10.111.5.26 22
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:MALLOC_ARENA_MAX=4
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_DIR=/util/Lmod/lmod/5.8/libexec
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:SHELL=/bin/bash
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_ROOT_LOGGER=INFO,RFA
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:CLASSPATH=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3719019:/util/academic/java/jdk1.6.0_22//lib/tools.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/..:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/activation-1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/aopalliance-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/asm-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/avro-1.7.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-beanutils-1.7.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-beanutils-core-1.8.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-cli-1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-codec-1.7.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-collections-3.2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-compress-1.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-configuration-1.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-daemon-1.0.13.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-digester-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-el-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-httpclient-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-io-2.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-lang-2.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-logging-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-math-2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-net-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/findbugs-annotations-1.3.9-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/gmbal-api-only-3.0.0-b023.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-framework-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-server-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-servlet-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-rcm-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guava-12.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guice-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guice-servlet-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-annotations-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-auth-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-hdfs-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-app-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-api-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-server-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hamcrest-core-1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-annotations-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-checkstyle-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-client-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-common-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-common-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-examples-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-hadoop2-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-hadoop-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-it-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-it-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-prefix-tree-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-protocol-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-rest-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-server-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-server-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-shell-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-testing-util-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-thrift-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/high-scale-lib-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/htrace-core-2.04.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/httpclient-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/httpcore-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-core-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-jaxrs-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-mapper-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-xc-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jamon-runtime-2.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jasper-compiler-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jasper-runtime-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.inject-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.servlet-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.servlet-api-3.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jaxb-api-2.2.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jaxb-impl-2.2.3-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jcodings-1.0.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-client-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-core-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-guice-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-json-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-server-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-test-framework-core-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-test-framework-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jets3t-0.6.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jettison-1.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-sslengine-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-util-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/joni-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jruby-complete-1.6.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsch-0.1.42.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsp-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsp-api-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsr305-1.3.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/junit-4.11.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/libthrift-0.9.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/log4j-1.2.17.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/management-api-3.0.0-b012.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/metrics-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/netty-3.6.6.Final.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/paranamer-2.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/protobuf-java-2.5.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/servlet-api-2.5-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/slf4j-api-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/slf4j-log4j12-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/snappy-java-1.0.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/xmlenc-0.52.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/xz-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/zookeeper-3.4.6.jar:
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_THRIFT_OPTS=
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:QTINC=/usr/lib64/qt-3.3/include
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:BASH_ENV=/util/Lmod/lmod/5.8/init/bash
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJhY3RpdmVTaXplIl09MixiYXNlTXBhdGhBPXsiL3V0aWwvTG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwiL3V0aWwvTG1vZC9tb2R1bGVmaWxlcy9Db21waWxlciIsIi91dGlsL0xtb2QvbW9kdWxlZmlsZXMvTVBJIix9LFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxmYW1pbHk9e30saW5hY3RpdmU9e30sbVQ9e1N0ZEVudj17WyJGTiJdPSIvdXRpbC9MbW9kL21vZHVsZWZpbGVzL0NvcmUvU3RkRW52Lmx1YSIsWyJkZWZhdWx0Il09MCxbImZ1bGxOYW1lIl09IlN0ZEVudiIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXt9LFsic2hvcnQiXT0iU3RkRW52IixbInN0YXR1cyJdPSJhY3RpdmUiLH0sbG1vZD17WyJGTiJdPSIv
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:USER=u2
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HOME=/user/u2
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LESSOPEN=|/usr/bin/lesspipe.sh %s
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LOADEDMODULES=lmod/5.8:StdEnv
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LMOD_COLORIZE=yes
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_LOG_PREFIX=hbase-u2-regionserver-k05n26
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:LANG=en_US.UTF-8
+15/04/17 23:18:32 INFO util.ServerCommandLine: env:HBASE_IDENT_STRING=u2
+15/04/17 23:18:32 INFO util.ServerCommandLine: vmName=Java HotSpot(TM) 64-Bit Server VM, vmVendor=Sun Microsystems Inc., vmVersion=17.1-b03
+15/04/17 23:18:32 INFO util.ServerCommandLine: vmInputArguments=[-Dproc_regionserver, -XX:OnOutOfMemoryError=kill, -9, %p, -Xmx1000m, -XX:+UseConcMarkSweepGC, -Dhbase.log.dir=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/hbase-logs-3719019, -Dhbase.log.file=hbase-u2-regionserver-k05n26.log, -Dhbase.home.dir=/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/.., -Dhbase.id.str=u2, -Dhbase.root.logger=INFO,RFA, -Dhbase.security.logger=INFO,RFAS]
+15/04/17 23:18:33 INFO ipc.SimpleRpcScheduler: Using default user call queue, count=3
+15/04/17 23:18:33 INFO ipc.RpcServer: regionserver/k05n26.ccr.buffalo.edu/10.111.5.26:60020: started 10 reader(s).
+15/04/17 23:18:33 INFO impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+15/04/17 23:18:33 INFO impl.MetricsSystemImpl: Scheduled snapshot period at 10 second(s).
+15/04/17 23:18:33 INFO impl.MetricsSystemImpl: HBase metrics system started
+15/04/17 23:18:33 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/04/17 23:18:33 INFO hfile.CacheConfig: Allocating LruBlockCache with maximum size 395 M
+15/04/17 23:18:33 INFO mortbay.log: Logging to org.slf4j.impl.Log4jLoggerAdapter(org.mortbay.log) via org.mortbay.log.Slf4jLog
+15/04/17 23:18:33 INFO http.HttpServer: Added global filter 'safety' (class=org.apache.hadoop.http.HttpServer$QuotingInputFilter)
+15/04/17 23:18:33 INFO http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context regionserver
+15/04/17 23:18:33 INFO http.HttpServer: Added filter static_user_filter (class=org.apache.hadoop.http.lib.StaticUserWebFilter$StaticUserFilter) to context static
+15/04/17 23:18:33 INFO http.HttpServer: Jetty bound to port 60030
+15/04/17 23:18:33 INFO mortbay.log: jetty-6.1.26
+15/04/17 23:18:33 WARN mortbay.log: Can't reuse /tmp/Jetty_0_0_0_0_60030_regionserver____.h599vl, using /tmp/Jetty_0_0_0_0_60030_regionserver____.h599vl_3074060911524345834
+15/04/17 23:18:33 INFO mortbay.log: Started SelectChannelConnector@0.0.0.0:60030
+15/04/17 23:18:34 INFO zookeeper.RecoverableZooKeeper: Process identifier=regionserver:60020 connecting to ZooKeeper ensemble=k05n26:2181
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:zookeeper.version=3.4.6-1569965, built on 02/20/2014 09:09 GMT
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:host.name=k05n26.ccr.buffalo.edu
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.version=1.6.0_22
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.vendor=Sun Microsystems Inc.
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.home=/gpfs/util/academic/java/jdk1.6.0_22/jre
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.class.path=/gpfs/courses/cse587/spring2015/students/u2/hw4/Uploader/hw4/config-3719019:/util/academic/java/jdk1.6.0_22//lib/tools.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/..:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/activation-1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/aopalliance-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/asm-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/avro-1.7.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-beanutils-1.7.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-beanutils-core-1.8.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-cli-1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-codec-1.7.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-collections-3.2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-compress-1.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-configuration-1.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-daemon-1.0.13.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-digester-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-el-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-httpclient-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-io-2.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-lang-2.6.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-logging-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-math-2.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/commons-net-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/findbugs-annotations-1.3.9-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/gmbal-api-only-3.0.0-b023.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-framework-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-server-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-http-servlet-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/grizzly-rcm-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guava-12.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guice-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/guice-servlet-3.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-annotations-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-auth-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-hdfs-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-app-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-jobclient-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-mapreduce-client-shuffle-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-api-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-client-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-server-common-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hadoop-yarn-server-nodemanager-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hamcrest-core-1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-annotations-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-checkstyle-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-client-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-common-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-common-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-examples-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-hadoop2-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-hadoop-compat-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-it-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-it-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-prefix-tree-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-protocol-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-rest-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-server-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-server-0.98.10.1-hadoop2-tests.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-shell-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-testing-util-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/hbase-thrift-0.98.10.1-hadoop2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/high-scale-lib-1.1.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/htrace-core-2.04.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/httpclient-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/httpcore-4.1.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-core-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-jaxrs-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-mapper-asl-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jackson-xc-1.8.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jamon-runtime-2.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jasper-compiler-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jasper-runtime-5.5.23.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.inject-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.servlet-3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/javax.servlet-api-3.0.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jaxb-api-2.2.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jaxb-impl-2.2.3-1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jcodings-1.0.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-client-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-core-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-guice-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-json-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-server-1.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-test-framework-core-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jersey-test-framework-grizzly2-1.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jets3t-0.6.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jettison-1.3.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-sslengine-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jetty-util-6.1.26.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/joni-2.1.2.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jruby-complete-1.6.8.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsch-0.1.42.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsp-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsp-api-2.1-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/jsr305-1.3.9.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/junit-4.11.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/libthrift-0.9.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/log4j-1.2.17.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/management-api-3.0.0-b012.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/metrics-core-2.2.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/netty-3.6.6.Final.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/paranamer-2.3.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/protobuf-java-2.5.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/servlet-api-2.5-6.1.14.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/slf4j-api-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/slf4j-log4j12-1.6.4.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/snappy-java-1.0.4.1.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/xmlenc-0.52.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/xz-1.0.jar:/util/academic/hbase/hbase-0.98.10.1-hadoop2/bin/../lib/zookeeper-3.4.6.jar:
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.library.path=/gpfs/util/academic/java/jdk1.6.0_22/jre/lib/amd64/server:/gpfs/util/academic/java/jdk1.6.0_22/jre/lib/amd64:/gpfs/util/academic/java/jdk1.6.0_22/jre/../lib/amd64:/util/cuda/4.0.17/cuda/lib64:/util/cuda/4.0.17/cuda/lib::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.io.tmpdir=/tmp
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:java.compiler=<NA>
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:os.name=Linux
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:os.arch=amd64
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:os.version=2.6.32-431.17.1.el6.x86_64
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:user.name=u2
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:user.home=/user/u2
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Client environment:user.dir=/gpfs/util/academic/hbase/hbase-0.98.10.1-hadoop2
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k05n26:2181 sessionTimeout=90000 watcher=regionserver:600200x0, quorum=k05n26:2181, baseZNode=/hbase
+15/04/17 23:18:34 INFO zookeeper.ClientCnxn: Opening socket connection to server k05n26.ccr.buffalo.edu/10.111.5.26:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/17 23:18:34 INFO zookeeper.ClientCnxn: Socket connection established to k05n26.ccr.buffalo.edu/10.111.5.26:2181, initiating session
+15/04/17 23:18:34 INFO zookeeper.ClientCnxn: Session establishment complete on server k05n26.ccr.buffalo.edu/10.111.5.26:2181, sessionid = 0x14cca88e1220001, negotiated timeout = 90000
+15/04/17 23:18:34 INFO zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x4eb3c24f connecting to ZooKeeper ensemble=k05n26:2181
+15/04/17 23:18:34 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k05n26:2181 sessionTimeout=90000 watcher=hconnection-0x4eb3c24f0x0, quorum=k05n26:2181, baseZNode=/hbase
+15/04/17 23:18:34 INFO zookeeper.ClientCnxn: Opening socket connection to server k05n26.ccr.buffalo.edu/10.111.5.26:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/17 23:18:34 INFO zookeeper.ClientCnxn: Socket connection established to k05n26.ccr.buffalo.edu/10.111.5.26:2181, initiating session
+15/04/17 23:18:34 INFO zookeeper.ClientCnxn: Session establishment complete on server k05n26.ccr.buffalo.edu/10.111.5.26:2181, sessionid = 0x14cca88e1220003, negotiated timeout = 90000
+15/04/17 23:18:34 INFO regionserver.ShutdownHook: Installed shutdown hook thread: Shutdownhook:regionserver60020
+15/04/17 23:18:34 INFO regionserver.HRegionServer: ClusterId : afa954b5-0ac7-41c5-8775-0f8801aa9a03
+15/04/17 23:18:34 INFO procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is initializing
+15/04/17 23:18:34 INFO zookeeper.RecoverableZooKeeper: Node /hbase/online-snapshot/acquired already exists and this is not a retry
+15/04/17 23:18:34 INFO procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is initialized
+15/04/17 23:18:34 INFO regionserver.MemStoreFlusher: globalMemStoreLimit=395 M, globalMemStoreLimitLowMark=375.3 M, maxHeap=987.5 M
+15/04/17 23:18:34 INFO regionserver.HRegionServer: CompactionChecker runs every 10sec
+15/04/17 23:18:34 INFO regionserver.HRegionServer: reportForDuty to master=k05n26.ccr.buffalo.edu,60000,1429327112191 with port=60020, startcode=1429327113472
+15/04/17 23:18:34 INFO Configuration.deprecation: fs.default.name is deprecated. Instead, use fs.defaultFS
+15/04/17 23:18:34 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+15/04/17 23:18:34 INFO fs.HFileSystem: Added intercepting call to namenode#getBlockLocations so can do block reordering using class class org.apache.hadoop.hbase.fs.HFileSystem$ReorderWALBlocks
+15/04/17 23:18:34 INFO Configuration.deprecation: hadoop.native.lib is deprecated. Instead, use io.native.lib.available
+15/04/17 23:18:34 INFO wal.FSHLog: WAL/HLog configuration: blocksize=128 MB, rollsize=121.60 MB, enabled=true
+15/04/17 23:18:35 INFO wal.FSHLog: New WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327114948
+15/04/17 23:18:35 INFO regionserver.MetricsRegionServerWrapperImpl: Computing regionserver metrics every 5000 milliseconds
+15/04/17 23:18:35 INFO regionserver.ReplicationSourceManager: Current list of replicators: [k05n26.ccr.buffalo.edu,60020,1429327113472] other RSs: [k05n26.ccr.buffalo.edu,60020,1429327113472]
+15/04/17 23:18:35 INFO Configuration.deprecation: fs.default.name is deprecated. Instead, use fs.defaultFS
+15/04/17 23:18:35 INFO zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x1167acf2 connecting to ZooKeeper ensemble=k05n26:2181
+15/04/17 23:18:35 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k05n26:2181 sessionTimeout=90000 watcher=hconnection-0x1167acf20x0, quorum=k05n26:2181, baseZNode=/hbase
+15/04/17 23:18:35 INFO zookeeper.ClientCnxn: Opening socket connection to server k05n26.ccr.buffalo.edu/10.111.5.26:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/17 23:18:35 INFO zookeeper.ClientCnxn: Socket connection established to k05n26.ccr.buffalo.edu/10.111.5.26:2181, initiating session
+15/04/17 23:18:35 INFO zookeeper.ClientCnxn: Session establishment complete on server k05n26.ccr.buffalo.edu/10.111.5.26:2181, sessionid = 0x14cca88e1220005, negotiated timeout = 90000
+15/04/17 23:18:35 INFO ipc.RpcServer: RpcServer.responder: starting
+15/04/17 23:18:35 INFO ipc.RpcServer: RpcServer.listener,port=60020: starting
+15/04/17 23:18:35 INFO Configuration.deprecation: fs.default.name is deprecated. Instead, use fs.defaultFS
+15/04/17 23:18:35 INFO regionserver.SplitLogWorker: SplitLogWorker k05n26.ccr.buffalo.edu,60020,1429327113472 starting
+15/04/17 23:18:35 INFO regionserver.HRegionServer: Serving as k05n26.ccr.buffalo.edu,60020,1429327113472, RpcServer on k05n26.ccr.buffalo.edu/10.111.5.26:60020, sessionid=0x14cca88e1220001
+15/04/17 23:18:35 INFO zookeeper.RecoverableZooKeeper: Process identifier=hconnection-0x411f2158 connecting to ZooKeeper ensemble=k05n26:2181
+15/04/17 23:18:35 INFO zookeeper.ZooKeeper: Initiating client connection, connectString=k05n26:2181 sessionTimeout=90000 watcher=hconnection-0x411f21580x0, quorum=k05n26:2181, baseZNode=/hbase
+15/04/17 23:18:35 INFO zookeeper.ClientCnxn: Opening socket connection to server k05n26.ccr.buffalo.edu/10.111.5.26:2181. Will not attempt to authenticate using SASL (java.lang.SecurityException: Unable to locate a login configuration)
+15/04/17 23:18:35 INFO zookeeper.ClientCnxn: Socket connection established to k05n26.ccr.buffalo.edu/10.111.5.26:2181, initiating session
+15/04/17 23:18:35 INFO zookeeper.ClientCnxn: Session establishment complete on server k05n26.ccr.buffalo.edu/10.111.5.26:2181, sessionid = 0x14cca88e1220006, negotiated timeout = 90000
+15/04/17 23:18:35 INFO procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is starting
+15/04/17 23:18:35 INFO procedure.RegionServerProcedureManagerHost: Procedure online-snapshot is started
+15/04/17 23:18:39 INFO regionserver.HRegionServer: Open hbase:meta,,1.1588230740
+15/04/17 23:18:39 INFO wal.FSHLog: WAL/HLog configuration: blocksize=128 MB, rollsize=121.60 MB, enabled=true
+15/04/17 23:18:39 INFO wal.FSHLog: New WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327119752.meta
+15/04/17 23:18:39 INFO regionserver.RegionCoprocessorHost: Loaded coprocessor org.apache.hadoop.hbase.coprocessor.MultiRowMutationEndpoint from HTD of hbase:meta successfully.
+15/04/17 23:18:39 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:39 INFO util.ChecksumType: Checksum using org.apache.hadoop.util.PureJavaCrc32
+15/04/17 23:18:39 INFO util.ChecksumType: Checksum can use org.apache.hadoop.util.PureJavaCrc32C
+15/04/17 23:18:39 INFO regionserver.HRegion: Onlined 1588230740; next sequenceid=1
+15/04/17 23:18:39 INFO regionserver.HRegionServer: Post open deploy tasks for region=hbase:meta,,1.1588230740
+15/04/17 23:18:39 INFO regionserver.HRegionServer: Updating zk with meta location
+15/04/17 23:18:39 INFO zookeeper.ZooKeeperNodeTracker: Setting hbase:meta region location in ZooKeeper as k05n26.ccr.buffalo.edu,60020,1429327113472
+15/04/17 23:18:39 INFO regionserver.HRegionServer: Finished post open deploy task for hbase:meta,,1.1588230740
+15/04/17 23:18:40 WARN wal.FSHLog: HDFS pipeline error detected. Found 1 replicas but expecting no less than 3 replicas.  Requesting close of hlog.
+15/04/17 23:18:40 INFO wal.FSHLog: Rolled WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327119752.meta with entries=1, filesize=268; new WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327120547.meta
+15/04/17 23:18:40 INFO regionserver.HRegionServer: Open hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0.
+15/04/17 23:18:40 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:40 INFO regionserver.HRegion: Onlined c6f9f3413e3f46a8f10d9fda8e8daac0; next sequenceid=1
+15/04/17 23:18:40 INFO regionserver.HRegionServer: Post open deploy tasks for region=hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0.
+15/04/17 23:18:40 WARN wal.FSHLog: HDFS pipeline error detected. Found 1 replicas but expecting no less than 3 replicas.  Requesting close of hlog.
+15/04/17 23:18:40 INFO catalog.MetaEditor: Updated row hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0. with server=k05n26.ccr.buffalo.edu,60020,1429327113472
+15/04/17 23:18:40 INFO regionserver.HRegionServer: Finished post open deploy task for hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0.
+15/04/17 23:18:40 INFO wal.FSHLog: Rolled WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327120547.meta with entries=1, filesize=484; new WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327120673.meta
+15/04/17 23:18:40 WARN wal.FSHLog: HDFS pipeline error detected. Found 1 replicas but expecting no less than 3 replicas.  Requesting close of hlog.
+15/04/17 23:18:40 INFO wal.FSHLog: Rolled WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327114948 with entries=2, filesize=303; new WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327120776
+15/04/17 23:18:41 WARN wal.FSHLog: HDFS pipeline error detected. Found 1 replicas but expecting no less than 3 replicas.  Requesting close of hlog.
+15/04/17 23:18:41 INFO regionserver.HRegionServer: Open raw,,1429327121178.0767d67b4a92ba527ca2d8adc2f61ec1.
+15/04/17 23:18:41 INFO wal.FSHLog: Rolled WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327120673.meta with entries=1, filesize=252; new WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327121362.meta
+15/04/17 23:18:41 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:41 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:41 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:41 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:41 INFO regionserver.HRegion: Onlined 0767d67b4a92ba527ca2d8adc2f61ec1; next sequenceid=1
+15/04/17 23:18:41 INFO regionserver.HRegionServer: Post open deploy tasks for region=raw,,1429327121178.0767d67b4a92ba527ca2d8adc2f61ec1.
+15/04/17 23:18:41 WARN wal.FSHLog: HDFS pipeline error detected. Found 1 replicas but expecting no less than 3 replicas.  Requesting close of hlog.
+15/04/17 23:18:41 INFO catalog.MetaEditor: Updated row raw,,1429327121178.0767d67b4a92ba527ca2d8adc2f61ec1. with server=k05n26.ccr.buffalo.edu,60020,1429327113472
+15/04/17 23:18:41 INFO regionserver.HRegionServer: Finished post open deploy task for raw,,1429327121178.0767d67b4a92ba527ca2d8adc2f61ec1.
+15/04/17 23:18:41 INFO wal.FSHLog: Rolled WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327121362.meta with entries=1, filesize=448; new WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327121409.meta
+15/04/17 23:18:51 WARN wal.FSHLog: HDFS pipeline error detected. Found 1 replicas but expecting no less than 3 replicas.  Requesting close of hlog.
+15/04/17 23:18:51 INFO regionserver.HRegionServer: Open Xi,,1429327131310.75c5f079c5120240e7eb59af76af7705.
+15/04/17 23:18:51 INFO wal.FSHLog: Rolled WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327121409.meta with entries=1, filesize=250; new WAL /hbase/WALs/k05n26.ccr.buffalo.edu,60020,1429327113472/k05n26.ccr.buffalo.edu%2C60020%2C1429327113472.1429327131357.meta
+15/04/17 23:18:51 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:51 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:18:51 INFO regionserver.HRegion: Onlined 75c5f079c5120240e7eb59af76af7705; next sequenceid=1
+15/04/17 23:18:51 INFO regionserver.HRegionServer: Post open deploy tasks for region=Xi,,1429327131310.75c5f079c5120240e7eb59af76af7705.
+15/04/17 23:18:51 WARN wal.FSHLog: Too many consecutive RollWriter requests, it's a sign of the total number of live datanodes is lower than the tolerable replicas.
+15/04/17 23:18:51 INFO catalog.MetaEditor: Updated row Xi,,1429327131310.75c5f079c5120240e7eb59af76af7705. with server=k05n26.ccr.buffalo.edu,60020,1429327113472
+15/04/17 23:18:51 INFO regionserver.HRegionServer: Finished post open deploy task for Xi,,1429327131310.75c5f079c5120240e7eb59af76af7705.
+15/04/17 23:19:14 INFO regionserver.HRegionServer: Open V,,1429327154237.2b4143c87ab9f57b6ed5dce8b8a308bf.
+15/04/17 23:19:14 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:19:14 INFO compactions.CompactionConfiguration: size [134217728, 9223372036854775807); files [3, 10); ratio 1.200000; off-peak ratio 5.000000; throttle point 2684354560; major period 604800000, major jitter 0.500000, min locality to compact 0.000000"
+15/04/17 23:19:14 INFO regionserver.HRegion: Onlined 2b4143c87ab9f57b6ed5dce8b8a308bf; next sequenceid=1
+15/04/17 23:19:14 INFO regionserver.HRegionServer: Post open deploy tasks for region=V,,1429327154237.2b4143c87ab9f57b6ed5dce8b8a308bf.
+15/04/17 23:19:14 INFO catalog.MetaEditor: Updated row V,,1429327154237.2b4143c87ab9f57b6ed5dce8b8a308bf. with server=k05n26.ccr.buffalo.edu,60020,1429327113472
+15/04/17 23:19:14 INFO regionserver.HRegionServer: Finished post open deploy task for V,,1429327154237.2b4143c87ab9f57b6ed5dce8b8a308bf.
+15/04/17 23:19:47 INFO regionserver.HRegionServer: Closing user regions
+15/04/17 23:19:47 INFO regionserver.HRegion: Started memstore flush for hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0., current region memstore size 344
+15/04/17 23:19:47 INFO regionserver.HStore: Closed Voltlty
+15/04/17 23:19:47 INFO regionserver.HStore: Closed stock
+15/04/17 23:19:47 INFO regionserver.HStore: Closed date
+15/04/17 23:19:47 INFO regionserver.HStore: Closed price
+15/04/17 23:19:47 INFO regionserver.HStore: Closed stock
+15/04/17 23:19:47 INFO regionserver.HStore: Closed time
+15/04/17 23:19:47 INFO regionserver.HRegion: Closed V,,1429327154237.2b4143c87ab9f57b6ed5dce8b8a308bf.
+15/04/17 23:19:47 INFO regionserver.HRegion: Closed raw,,1429327121178.0767d67b4a92ba527ca2d8adc2f61ec1.
+15/04/17 23:19:47 INFO regionserver.HStore: Closed Xi
+15/04/17 23:19:47 INFO regionserver.HStore: Closed stockmonyear
+15/04/17 23:19:47 INFO regionserver.HRegion: Closed Xi,,1429327131310.75c5f079c5120240e7eb59af76af7705.
+15/04/17 23:19:47 INFO regionserver.DefaultStoreFlusher: Flushed, sequenceid=4, memsize=344, hasBloomFilter=true, into tmp file hdfs://k05n26:54310/hbase/data/hbase/namespace/c6f9f3413e3f46a8f10d9fda8e8daac0/.tmp/642fd1fbc311406a90bac6708471d6ce
+15/04/17 23:19:47 INFO regionserver.HStore: Added hdfs://k05n26:54310/hbase/data/hbase/namespace/c6f9f3413e3f46a8f10d9fda8e8daac0/info/642fd1fbc311406a90bac6708471d6ce, entries=2, sequenceid=4, filesize=1.0 K
+15/04/17 23:19:47 INFO regionserver.HRegion: Finished memstore flush of ~344/344, currentsize=0/0 for region hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0. in 224ms, sequenceid=4, compaction requested=false
+15/04/17 23:19:47 INFO regionserver.HStore: Closed info
+15/04/17 23:19:47 INFO regionserver.HRegion: Closed hbase:namespace,,1429327120006.c6f9f3413e3f46a8f10d9fda8e8daac0.
+15/04/17 23:19:53 INFO regionserver.HRegionServer: STOPPED: Stopped; only catalog regions remaining online
+15/04/17 23:19:53 INFO ipc.RpcServer: Stopping server on 60020
+15/04/17 23:19:53 INFO ipc.RpcServer: RpcServer.listener,port=60020: stopping
+15/04/17 23:19:53 INFO ipc.RpcServer: RpcServer.responder: stopped
+15/04/17 23:19:53 INFO ipc.RpcServer: RpcServer.responder: stopping
+15/04/17 23:19:53 INFO regionserver.SplitLogWorker: Sending interrupt to stop the worker thread
+15/04/17 23:19:53 INFO regionserver.HRegionServer: Stopping infoServer
+15/04/17 23:19:53 INFO regionserver.SplitLogWorker: SplitLogWorker interrupted while waiting for task, exiting: java.lang.InterruptedException
+15/04/17 23:19:53 INFO regionserver.SplitLogWorker: SplitLogWorker k05n26.ccr.buffalo.edu,60020,1429327113472 exiting
+15/04/17 23:19:53 INFO mortbay.log: Stopped SelectChannelConnector@0.0.0.0:60030
+15/04/17 23:19:53 INFO snapshot.RegionServerSnapshotManager: Stopping RegionServerSnapshotManager gracefully.
+15/04/17 23:19:53 INFO regionserver.LogRoller: LogRoller exiting.
+15/04/17 23:19:53 INFO regionserver.MemStoreFlusher: MemStoreFlusher.1 exiting
+15/04/17 23:19:53 INFO regionserver.HRegionServer: stopping server k05n26.ccr.buffalo.edu,60020,1429327113472
+15/04/17 23:19:53 INFO regionserver.MemStoreFlusher: MemStoreFlusher.0 exiting
+15/04/17 23:19:53 INFO regionserver.LogRoller: LogRoller exiting.
+15/04/17 23:19:53 INFO regionserver.HeapMemoryManager$HeapMemoryChore: k05n26.ccr.buffalo.edu,60020,1429327113472-HeapMemoryChore exiting
+15/04/17 23:19:53 INFO regionserver.ServerNonceManager$1: regionserver60020.nonceCleaner exiting
+15/04/17 23:19:53 INFO regionserver.HRegionServer$CompactionChecker: regionserver60020.compactionChecker exiting
+15/04/17 23:19:53 INFO client.HConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x14cca88e1220003
+15/04/17 23:19:53 INFO zookeeper.ZooKeeper: Session: 0x14cca88e1220003 closed
+15/04/17 23:19:53 INFO zookeeper.ClientCnxn: EventThread shut down
+15/04/17 23:19:53 INFO regionserver.CompactSplitThread: Waiting for Split Thread to finish...
+15/04/17 23:19:53 INFO regionserver.CompactSplitThread: Waiting for Merge Thread to finish...
+15/04/17 23:19:53 INFO regionserver.CompactSplitThread: Waiting for Large Compaction Thread to finish...
+15/04/17 23:19:53 INFO regionserver.CompactSplitThread: Waiting for Small Compaction Thread to finish...
+15/04/17 23:19:53 INFO regionserver.HRegionServer: Waiting on 1 regions to close
+15/04/17 23:19:53 INFO regionserver.HRegion: Started memstore flush for hbase:meta,,1.1588230740, current region memstore size 3.8 K
+15/04/17 23:19:53 INFO regionserver.DefaultStoreFlusher: Flushed, sequenceid=10, memsize=3.8 K, hasBloomFilter=false, into tmp file hdfs://k05n26:54310/hbase/data/hbase/meta/1588230740/.tmp/640f29e4088b4a0383836570cffde53a
+15/04/17 23:19:53 INFO regionserver.HStore: Added hdfs://k05n26:54310/hbase/data/hbase/meta/1588230740/info/640f29e4088b4a0383836570cffde53a, entries=16, sequenceid=10, filesize=2.5 K
+15/04/17 23:19:53 INFO regionserver.HRegion: Finished memstore flush of ~3.8 K/3872, currentsize=0/0 for region hbase:meta,,1.1588230740 in 32ms, sequenceid=10, compaction requested=false
+15/04/17 23:19:53 INFO regionserver.HStore: Closed info
+15/04/17 23:19:53 INFO regionserver.HRegion: Closed hbase:meta,,1.1588230740
+15/04/17 23:19:53 INFO regionserver.HRegionServer: stopping server k05n26.ccr.buffalo.edu,60020,1429327113472; all regions closed.
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncNotifier exiting
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncSyncer0 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncSyncer1 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncSyncer2 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncSyncer3 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncSyncer4 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: RS_OPEN_META-k05n26:60020-0-WAL.AsyncWriter exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncNotifier exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncSyncer0 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncSyncer1 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncSyncer2 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncSyncer3 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncSyncer4 exiting
+15/04/17 23:19:53 INFO wal.FSHLog: regionserver60020-WAL.AsyncWriter exiting
+15/04/17 23:19:53 INFO regionserver.Leases: regionserver60020 closing leases
+15/04/17 23:19:53 INFO regionserver.Leases: regionserver60020 closed leases
+15/04/17 23:19:55 INFO regionserver.HRegionServer$PeriodicMemstoreFlusher: regionserver60020.periodicFlusher exiting
+15/04/17 23:19:55 INFO regionserver.Leases: regionserver60020.leaseChecker closing leases
+15/04/17 23:19:55 INFO regionserver.Leases: regionserver60020.leaseChecker closed leases
+15/04/17 23:19:55 INFO client.HConnectionManager$HConnectionImplementation: Closing zookeeper sessionid=0x14cca88e1220005
+15/04/17 23:19:55 INFO zookeeper.ZooKeeper: Session: 0x14cca88e1220005 closed
+15/04/17 23:19:55 INFO zookeeper.ClientCnxn: EventThread shut down
+15/04/17 23:19:55 INFO zookeeper.ZooKeeper: Session: 0x14cca88e1220001 closed
+15/04/17 23:19:55 INFO zookeeper.ClientCnxn: EventThread shut down
+15/04/17 23:19:55 INFO regionserver.HRegionServer: stopping server k05n26.ccr.buffalo.edu,60020,1429327113472; zookeeper connection closed.
+15/04/17 23:19:55 INFO regionserver.HRegionServer: regionserver60020 exiting
+15/04/17 23:19:55 INFO regionserver.ShutdownHook: Shutdown hook starting; hbase.shutdown.hook=true; fsShutdownHook=org.apache.hadoop.fs.FileSystem$Cache$ClientFinalizer@53465ca2
+15/04/17 23:19:55 INFO regionserver.ShutdownHook: Starting fs shutdown hook thread.
+15/04/17 23:19:55 INFO regionserver.ShutdownHook: Shutdown hook finished.

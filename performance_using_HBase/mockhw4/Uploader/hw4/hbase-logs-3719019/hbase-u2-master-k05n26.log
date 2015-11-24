@@ -1,0 +1,18 @@
+Fri Apr 17 23:18:30 EDT 2015 Starting master on k05n26
+core file size          (blocks, -c) 0
+data seg size           (kbytes, -d) unlimited
+scheduling priority             (-e) 0
+file size               (blocks, -f) unlimited
+pending signals                 (-i) 1031675
+max locked memory       (kbytes, -l) unlimited
+max memory size         (kbytes, -m) 49152000
+open files                      (-n) 4096
+pipe size            (512 bytes, -p) 8
+POSIX message queues     (bytes, -q) 819200
+real-time priority              (-r) 0
+stack size              (kbytes, -s) 10240
+cpu time               (seconds, -t) unlimited
+max user processes              (-u) 1031675
+virtual memory          (kbytes, -v) unlimited
+file locks                      (-x) unlimited
+Fri Apr 17 23:19:44 EDT 2015 Stopping hbase (via master)

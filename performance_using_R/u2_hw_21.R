@@ -1,0 +1,171 @@
+# =====================================================================
+# CSE487/587
+# Author: Utkarsh Srivastava
+# Email: u2@buffalo.edu
+# =====================================================================
+
+# need to install the following two packages in CCR(at least)
+# install.packages("forecast")
+# install.packages("fpp")
+# data path /gpfs/courses/cse587/spring2015/data/hw2/data
+
+library(forecast)
+library(fpp)
+
+# need to read the stocklist, and loop all files
+### TO DO
+
+lr_MAE<-c()
+HW_MAE<-c()
+arima_MAE<-c()
+
+us_lrm<-c()
+us_holtw<-c()
+filenam<-list.files(path="/gpfs/courses/cse587/spring2015/data/hw2/data", pattern="*.csv",no.=FALSE, full.names=TRUE, ignore.case=TRUE)##TODO:needto change the path
+stockname<-c()
+stockname1<-c()
+stockname2<-c()
+
+for(filenum in 1:length(filenam))
+{
+filename=filenam[filenum]
+if (length(readLines(filename))!=755) {
+next
+}#f
+
+
+# if file is not empty
+f<-file.info(filename)
+if(!is.na(f)) {
+
+  # read one csv file into variable (DO NOT EDIT)
+stockname<-c(stockname,basename(filename));
+stockname1<-c(stockname,basename(filename));
+stockname2<-c(stockname,basename(filename));
+
+#print(stockname)
+
+  # read one csv file into variable (DO NOT EDIT)
+  textData=read.csv(file=filename, header=T)
+  
+  # convert txt data to time-series data, in day unit (DO NOT EDIT)
+  tsData = ts(rev(textData$Adj.Close),start=c(2012, 1),frequency=365)
+  
+  # define train data (DO NOT EDIT)
+  trainData = window(tsData, end=c(2014,14))
+  hwtrainData = window(tsData, end=c(2014,14))
+  
+  # define test data (DO NOT EDIT)
+  testData = window(tsData, start=c(2014,15))
+             
+  # MAE row vector (DO NOT EDIT)
+  MAE = matrix(NA,1,length(testData))
+  rm_MAE = matrix(NA,1,length(testData))
+  hw_MAE = matrix(NA,1,length(testData))
+  
+  # apply ARIMA model (DO NOT EDIT)
+  fitData = auto.arima(trainData) #arima
+#fitData = auto.arima(trainData) #arima
+  
+  # apply Reg model
+  
+  regressionModelData=tslm(trainData~trend+season)
+  # apply HW model
+
+  HWModelData= HoltWinters(hwtrainData,beta=FALSE, gamma = FALSE)
+            #seasonal = c("additive", "multiplicative"),
+            #start.periods = 2, l.start = trainData, b.start = testData,
+            #s.start = NULL,
+            #optim.start = c(alpha = 0.3, beta = 0.1, gamma = 0.1),
+            #optim.control = list()) 
+  
+  
+  # apply forecast(DO NOT EDIT)
+  forecastData = forecast(fitData, h=length(testData)) #arima
+  rm_forecastData = forecast(regressionModelData, h=length(testData))
+  hw_forecastData = forecast(HWModelData, h=length(testData))
+  
+  # print variable and see what is in the result data set
+  
+  # calculate Mean Absolute Error 
+  for(i in 1:length(testData))
+  {
+    MAE[1,i] = abs(forecastData$mean[i] - testData[i])#arima
+rm_MAE[1,i] = abs(rm_forecastData$mean[i] - testData[i])
+hw_MAE[1,i] = abs(hw_forecastData$mean[i] - testData[i])
+  }
+  
+  # this is the result you need for stock AAPL
+
+arima_MAE<-c(arima_MAE,sum(MAE[1,1:10]))#arima
+lr_MAE<-c(lr_MAE,sum(rm_MAE[1,1:10]))
+HW_MAE<-c(HW_MAE,sum(hw_MAE[1,1:10]))#"hw"
+
+##}
+
+}
+}
+
+lm<-c()
+
+us_lrm=cbind(stockname1,lr_MAE)
+print("LREGRESSION")
+print(us_lrm)
+
+lm=us_lrm[order(lr_MAE),]
+rownames(lm)=lm[1:nrow(lm)]
+lm=lm[1:10,]
+print(lm)
+jpeg('lm.jpg') 
+		#  plot(MAE[1,1:10], col = "blue")
+plot(lm[1:10,2], main="Linear Regression Model", ylab="MAE")
+text(lm[1:10,2],row.names(lm),cex=1,pos=4,col="red");
+ 	# lines(MAE[1,1:10], lw = 2, col = "red")
+lines(lm[1:10,2],lw = 2,col = "red")
+
+dev.off()
+
+
+
+
+
+hw<-c()
+
+us_holtw=cbind(stockname2,HW_MAE)
+print("HW")
+print(us_holtw)
+hw=us_holtw[order(HW_MAE),]
+
+rownames(hw)=hw[1:nrow(hw)]
+hw=head(hw,10)
+print(hw)
+jpeg('hw.jpg') 
+		#  plot(MAE[1,1:10], col = "blue")
+plot(hw[1:10,2], main="HoltzWinter Model", ylab="MAE")
+text(hw[1:10,2],row.names(hw),cex=1,pos=4,col="red");
+ 	# lines(MAE[1,1:10], lw = 2, col = "red")
+lines(hw[1:10,2],lw = 2,col = "red")
+
+dev.off()
+
+
+arima=c()
+us_arima=cbind(stockname,arima_MAE)
+arima=us_arima[order(arima_MAE),]
+
+rownames(arima)=arima[1:nrow(arima)]
+arima=arima[1:10,]
+print(arima)
+jpeg('arima.jpg') 
+		#  plot(MAE[1,1:10], col = "blue")
+plot(arima[1:10,2], main="Arima Model", ylab="MAE")
+text(arima[1:10,2],row.names(arima),cex=1,pos=4,col="red");
+ 	# lines(MAE[1,1:10], lw = 2, col = "red")
+lines(arima[1:10,2],lw = 2,col = "red")
+
+dev.off()
+
+ # plot the top 10 minimum sum of MAE in 3 models respectively
+#  plot(MAE[1,1:10], col = "blue")
+ # lines(MAE[1,1:10], lw = 2, col = "red")
+  ### TO DO

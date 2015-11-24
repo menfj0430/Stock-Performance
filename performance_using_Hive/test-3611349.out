@@ -1,0 +1,200 @@
+SLURM_JOBID=3611349
+SLURM_JOB_NODELIST=k05n26
+SLURM_NNODES=1
+SLURMTMPDIR=/scratch/3611349
+working directory = /gpfs/courses/cse587/spring2015/students/u2/hw3/hive_official/src
+
+Currently Loaded Modules:
+  1) lmod/5.8   3) java/1.6.0_22   5) hive/0.14.0
+  2) StdEnv     4) hadoop/2.5.1    6) myhadoop/0.30b
+
+
+
+MH_HOME=/util/academic/myhadoop/myHadoop-0.30b
+HADOOP_HOME=/util/academic/hadoop/2.5.1/hadoop-2.5.1
+Setting HADOOP to use SLURMTMPDIR on the local disk
+MH_SCRATCH_DIR=/scratch/3611349
+create diretory for HIVE metadata
+-------Set up the configurations for myHadoop
+myHadoop: Using HADOOP_HOME=/util/academic/hadoop/2.5.1/hadoop-2.5.1
+myHadoop: Using MH_SCRATCH_DIR=/scratch/3611349
+myHadoop: Using JAVA_HOME=/util/academic/java/jdk1.6.0_22/
+myHadoop: Generating Hadoop configuration in directory in /gpfs/courses/cse587/spring2015/students/u2/hw3/hive_official/src/config-3611349...
+myHadoop: Designating k05n26 as master node (namenode, secondary namenode, and jobtracker)
+myHadoop: The following nodes will be slaves (datanode, tasktracer):
+k05n26
+DEPRECATED: Use of this script to execute hdfs command is deprecated.
+Instead use the hdfs command for it.
+
+15/03/31 23:09:37 INFO namenode.NameNode: STARTUP_MSG: 
+/************************************************************
+STARTUP_MSG: Starting NameNode
+STARTUP_MSG:   host = k05n26.ccr.buffalo.edu/10.111.5.26
+STARTUP_MSG:   args = [-format, -nonInteractive, -force]
+STARTUP_MSG:   version = 2.5.1
+STARTUP_MSG:   classpath = /gpfs/courses/cse587/spring2015/students/u2/hw3/hive_official/src/config-3611349:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/snappy-java-1.0.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-beanutils-1.7.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsp-api-2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/xmlenc-0.52.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsch-0.1.42.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-api-1.7.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-net-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/activation-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-json-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-collections-3.2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-xc-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jets3t-0.9.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-beanutils-core-1.8.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hadoop-annotations-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/java-xmlbuilder-0.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/paranamer-2.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hadoop-auth-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jettison-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/stax-api-1.0-2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/mockito-all-1.8.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-digester-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/httpclient-4.2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/api-asn1-api-1.0.0-M20.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-jaxrs-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/avro-1.7.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-math3-3.1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/junit-4.11.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/apacheds-kerberos-codec-2.0.0-M15.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-configuration-1.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jaxb-api-2.2.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-httpclient-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-el-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jasper-runtime-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/httpcore-4.2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/api-util-1.0.0-M20.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/apacheds-i18n-2.0.0-M15.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jasper-compiler-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/hamcrest-core-1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-nfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-common-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/hadoop-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jsp-api-2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/xmlenc-0.52.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-daemon-1.0.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-el-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jasper-runtime-5.5.23.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-nfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/hdfs/hadoop-hdfs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-client-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-logging-1.1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jetty-util-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/activation-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-json-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-collections-3.2.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-xc-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jsr305-1.3.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jettison-1.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-codec-1.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/stax-api-1.0-2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/javax.inject-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/zookeeper-3.4.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-cli-1.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jersey-guice-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/leveldbjni-all-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-jaxrs-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/servlet-api-2.5.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/aopalliance-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-lang-2.6.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guice-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jaxb-api-2.2.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-httpclient-3.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guava-11.0.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jaxb-impl-2.2.3-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jetty-6.1.26.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jline-0.9.94.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/guice-servlet-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-nodemanager-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-tests-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-applicationhistoryservice-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-resourcemanager-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-client-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-server-web-proxy-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/yarn/hadoop-yarn-api-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/snappy-java-1.0.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/protobuf-java-2.5.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-server-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jackson-mapper-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/hadoop-annotations-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/paranamer-2.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/javax.inject-1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/asm-3.2.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/xz-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-core-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/commons-compress-1.4.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jersey-guice-1.9.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/leveldbjni-all-1.8.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/avro-1.7.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/netty-3.6.2.Final.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/junit-4.11.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/aopalliance-1.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/guice-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/hamcrest-core-1.3.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/commons-io-2.4.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/log4j-1.2.17.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/guice-servlet-3.0.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/lib/jackson-core-asl-1.9.13.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-app-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-common-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-hs-plugins-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.5.1-tests.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.5.1.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/contrib/capacity-scheduler/*.jar:/util/academic/hadoop/2.5.1/hadoop-2.5.1/contrib/capacity-scheduler/*.jar
+STARTUP_MSG:   build = https://git-wip-us.apache.org/repos/asf/hadoop.git -r 2e18d179e4a8065b6a9f29cf2de9451891265cce; compiled by 'jenkins' on 2014-09-05T23:11Z
+STARTUP_MSG:   java = 1.6.0_22
+************************************************************/
+15/03/31 23:09:37 INFO namenode.NameNode: registered UNIX signal handlers for [TERM, HUP, INT]
+15/03/31 23:09:37 INFO namenode.NameNode: createNameNode [-format, -nonInteractive, -force]
+15/03/31 23:09:38 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/03/31 23:09:38 WARN common.Util: Path /scratch/3611349/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+15/03/31 23:09:38 WARN common.Util: Path /scratch/3611349/namenode_data should be specified as a URI in configuration files. Please update hdfs configuration.
+Formatting using clusterid: CID-8df74bf4-69a7-48a6-ad97-3aa091cacec6
+15/03/31 23:09:38 INFO namenode.FSNamesystem: fsLock is fair:true
+15/03/31 23:09:38 INFO blockmanagement.DatanodeManager: dfs.block.invalidate.limit=1000
+15/03/31 23:09:38 INFO blockmanagement.DatanodeManager: dfs.namenode.datanode.registration.ip-hostname-check=true
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: dfs.namenode.startup.delay.block.deletion.sec is set to 000:00:00:00.000
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: The block deletion will start around 2015 Mar 31 23:09:38
+15/03/31 23:09:38 INFO util.GSet: Computing capacity for map BlocksMap
+15/03/31 23:09:38 INFO util.GSet: VM type       = 64-bit
+15/03/31 23:09:38 INFO util.GSet: 2.0% max memory 958.4 MB = 19.2 MB
+15/03/31 23:09:38 INFO util.GSet: capacity      = 2^21 = 2097152 entries
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: dfs.block.access.token.enable=false
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: defaultReplication         = 3
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: maxReplication             = 512
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: minReplication             = 1
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: maxReplicationStreams      = 2
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: shouldCheckForEnoughRacks  = false
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: replicationRecheckInterval = 3000
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: encryptDataTransfer        = false
+15/03/31 23:09:38 INFO blockmanagement.BlockManager: maxNumBlocksToLog          = 1000
+15/03/31 23:09:38 INFO namenode.FSNamesystem: fsOwner             = u2 (auth:SIMPLE)
+15/03/31 23:09:38 INFO namenode.FSNamesystem: supergroup          = supergroup
+15/03/31 23:09:38 INFO namenode.FSNamesystem: isPermissionEnabled = true
+15/03/31 23:09:38 INFO namenode.FSNamesystem: HA Enabled: false
+15/03/31 23:09:38 INFO namenode.FSNamesystem: Append Enabled: true
+15/03/31 23:09:38 INFO util.GSet: Computing capacity for map INodeMap
+15/03/31 23:09:38 INFO util.GSet: VM type       = 64-bit
+15/03/31 23:09:38 INFO util.GSet: 1.0% max memory 958.4 MB = 9.6 MB
+15/03/31 23:09:38 INFO util.GSet: capacity      = 2^20 = 1048576 entries
+15/03/31 23:09:38 INFO namenode.NameNode: Caching file names occuring more than 10 times
+15/03/31 23:09:38 INFO util.GSet: Computing capacity for map cachedBlocks
+15/03/31 23:09:38 INFO util.GSet: VM type       = 64-bit
+15/03/31 23:09:38 INFO util.GSet: 0.25% max memory 958.4 MB = 2.4 MB
+15/03/31 23:09:38 INFO util.GSet: capacity      = 2^18 = 262144 entries
+15/03/31 23:09:38 INFO namenode.FSNamesystem: dfs.namenode.safemode.threshold-pct = 0.9990000128746033
+15/03/31 23:09:38 INFO namenode.FSNamesystem: dfs.namenode.safemode.min.datanodes = 0
+15/03/31 23:09:38 INFO namenode.FSNamesystem: dfs.namenode.safemode.extension     = 30000
+15/03/31 23:09:38 INFO namenode.FSNamesystem: Retry cache on namenode is enabled
+15/03/31 23:09:38 INFO namenode.FSNamesystem: Retry cache will use 0.03 of total heap and retry cache entry expiry time is 600000 millis
+15/03/31 23:09:38 INFO util.GSet: Computing capacity for map NameNodeRetryCache
+15/03/31 23:09:38 INFO util.GSet: VM type       = 64-bit
+15/03/31 23:09:38 INFO util.GSet: 0.029999999329447746% max memory 958.4 MB = 294.4 KB
+15/03/31 23:09:38 INFO util.GSet: capacity      = 2^15 = 32768 entries
+15/03/31 23:09:38 INFO namenode.NNConf: ACLs enabled? false
+15/03/31 23:09:38 INFO namenode.NNConf: XAttrs enabled? true
+15/03/31 23:09:38 INFO namenode.NNConf: Maximum size of an xattr: 16384
+15/03/31 23:09:38 INFO namenode.FSImage: Allocated new BlockPoolId: BP-1482017666-10.111.5.26-1427857778657
+15/03/31 23:09:38 INFO common.Storage: Storage directory /scratch/3611349/namenode_data has been successfully formatted.
+15/03/31 23:09:38 INFO namenode.NNStorageRetentionManager: Going to retain 1 images with txid >= 0
+15/03/31 23:09:38 INFO util.ExitUtil: Exiting with status 0
+15/03/31 23:09:38 INFO namenode.NameNode: SHUTDOWN_MSG: 
+/************************************************************
+SHUTDOWN_MSG: Shutting down NameNode at k05n26.ccr.buffalo.edu/10.111.5.26
+************************************************************/
+cp: cannot stat `/util/academic/hive/apache-hive-0.14.0-bin/conf/hive-env.sh-sample': No such file or directory
+total 0
+-rw-r--r-- 1 u2 cse633S15   3589 Mar 31 23:09 capacity-scheduler.xml
+-rw-r--r-- 1 u2 cse633S15   1335 Mar 31 23:09 configuration.xsl
+-rw-r--r-- 1 u2 cse633S15    318 Mar 31 23:09 container-executor.cfg
+-rw-r--r-- 1 u2 cse633S15   1024 Mar 31 23:09 core-site.xml
+-rw-r--r-- 1 u2 cse633S15   3670 Mar 31 23:09 hadoop-env.cmd
+-rw-r--r-- 1 u2 cse633S15   4078 Mar 31 23:09 hadoop-env.sh
+-rw-r--r-- 1 u2 cse633S15   1774 Mar 31 23:09 hadoop-metrics2.properties
+-rw-r--r-- 1 u2 cse633S15   2490 Mar 31 23:09 hadoop-metrics.properties
+-rw-r--r-- 1 u2 cse633S15   9201 Mar 31 23:09 hadoop-policy.xml
+-rw-r--r-- 1 u2 cse633S15   1867 Mar 31 23:09 hdfs-site.xml
+-rw-r--r-- 1 u2 cse633S15 144938 Mar 31 23:09 hive-default.xml
+-rw-r--r-- 1 u2 cse633S15   3085 Mar 31 23:09 hive-log4j.properties
+-rw-r--r-- 1 u2 cse633S15   1449 Mar 31 23:09 httpfs-env.sh
+-rw-r--r-- 1 u2 cse633S15   1657 Mar 31 23:09 httpfs-log4j.properties
+-rw-r--r-- 1 u2 cse633S15     21 Mar 31 23:09 httpfs-signature.secret
+-rw-r--r-- 1 u2 cse633S15    620 Mar 31 23:09 httpfs-site.xml
+-rw-r--r-- 1 u2 cse633S15  11118 Mar 31 23:09 log4j.properties
+-rw-r--r-- 1 u2 cse633S15    938 Mar 31 23:09 mapred-env.cmd
+-rw-r--r-- 1 u2 cse633S15   1383 Mar 31 23:09 mapred-env.sh
+-rw-r--r-- 1 u2 cse633S15   4113 Mar 31 23:09 mapred-queues.xml.template
+-rw-r--r-- 1 u2 cse633S15    967 Mar 31 23:09 mapred-site.xml
+-rw-r--r-- 1 u2 cse633S15    758 Mar 31 23:09 mapred-site.xml.template
+-rw-r--r-- 1 u2 cse633S15      7 Mar 31 23:09 masters
+-rw-r--r-- 1 u2 cse633S15    639 Mar 31 23:09 myhadoop.conf
+-rw-r--r-- 1 u2 cse633S15      7 Mar 31 23:09 slaves
+-rw-r--r-- 1 u2 cse633S15   2316 Mar 31 23:09 ssl-client.xml.example
+-rw-r--r-- 1 u2 cse633S15   2268 Mar 31 23:09 ssl-server.xml.example
+-rw-r--r-- 1 u2 cse633S15   2237 Mar 31 23:09 yarn-env.cmd
+-rw-r--r-- 1 u2 cse633S15   4567 Mar 31 23:09 yarn-env.sh
+-rw-r--r-- 1 u2 cse633S15   1903 Mar 31 23:09 yarn-site.xml
+-------Start hdfs and yarn ---
+This script is Deprecated. Instead use start-dfs.sh and start-yarn.sh
+15/03/31 23:09:39 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Starting namenodes on [k05n26]
+k05n26: starting namenode, logging to /scratch/3611349/logs/hadoop-u2-namenode-k05n26.out
+k05n26: starting datanode, logging to /scratch/3611349/logs/hadoop-u2-datanode-k05n26.out
+Starting secondary namenodes [k05n26]
+k05n26: starting secondarynamenode, logging to /scratch/3611349/logs/hadoop-u2-secondarynamenode-k05n26.out
+15/03/31 23:09:56 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+starting yarn daemons
+starting resourcemanager, logging to /scratch/3611349/logs/yarn-u2-resourcemanager-k05n26.out
+k05n26: starting nodemanager, logging to /scratch/3611349/logs/yarn-u2-nodemanager-k05n26.out
+-------Show Report ---
+-------make directory ---
+15/03/31 23:10:00 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/03/31 23:10:01 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/03/31 23:10:02 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/03/31 23:10:04 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+-------list warehouse directory ---
+15/03/31 23:10:05 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/03/31 23:10:06 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+15/03/31 23:10:08 WARN util.NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+Logging initialized using configuration in file:/gpfs/courses/cse587/spring2015/students/u2/hw3/hive_official/src/config-3611349/hive-log4j.properties
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hadoop/2.5.1/hadoop-2.5.1/share/hadoop/common/lib/slf4j-log4j12-1.7.5.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/gpfs/util/academic/hive/apache-hive-0.14.0-bin/lib/hive-jdbc-0.14.0-standalone.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.Log4jLoggerFactory]
+OK
+Time taken: 0.316 seconds
+OK
+Time taken: 0.264 seconds
+OK
+Time taken: 0.0090 seconds
+OK
+Time taken: 0.031 seconds
+Query ID = u2_20150331231313_3d76e571-56b0-4c18-bb29-293c832f190f
+Total jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1427857797694_0001, Tracking URL = http://k05n26:8088/proxy/application_1427857797694_0001/
+Kill Command = /util/academic/hadoop/2.5.1/hadoop-2.5.1/bin/hadoop job  -kill job_1427857797694_0001
+Hadoop job information for Stage-1: number of mappers: 0; number of reducers: 0
+2015-03-31 23:13:37,176 Stage-1 map = 0%,  reduce = 0%
+Ended Job = job_1427857797694_0001
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to: hdfs://k05n26:54310/tmp/hive/u2/c7e988b4-54b2-4b89-b7f4-52d3f8935901/hive_2015-03-31_23-13-27_893_1119470055326645968-1/-ext-10000
+Loading data to table default.reqddata
+Table default.reqddata stats: [numFiles=0, numRows=0, totalSize=0, rawDataSize=0]
+MapReduce Jobs Launched: 
+Stage-Stage-1:  HDFS Read: 0 HDFS Write: 0 SUCCESS
+Total MapReduce CPU Time Spent: 0 msec
+OK
+Time taken: 10.515 seconds
+OK
+Time taken: 0.0090 seconds
+Query ID = u2_20150331231313_2749393a-6c3d-4cb7-bba8-bbe59dc26c13
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1427857797694_0002, Tracking URL = http://k05n26:8088/proxy/application_1427857797694_0002/
+Kill Command = /util/academic/hadoop/2.5.1/hadoop-2.5.1/bin/hadoop job  -kill job_1427857797694_0002
+slurmstepd: *** JOB 3611349 CANCELLED AT 2015-03-31T23:13:48 *** on k05n26
